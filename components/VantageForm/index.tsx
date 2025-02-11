@@ -295,7 +295,7 @@ const SecondSection = ({ pdfData }) => {
                     <input
                       type="hidden"
                       id="amount"
-                      value={24.99}
+                      value={0.50}
                       {...register("amount")}
                     />
                   </div>
