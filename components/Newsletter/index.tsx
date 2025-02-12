@@ -21,7 +21,7 @@ const POSTS_QUERY = gql`
 
 export default function Newsletter() {
   const { loading, error, data } = useQuery(POSTS_QUERY)
-  const [formData, setFormData] = useState({ input_3: '', input_8: '' ,input_4: 'Newsletter' })
+  const [formData, setFormData] = useState({ input_3: '', input_8: '' ,input_4: 'Newsletter Form' })
   const [message, setMessage] = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
   const [Submittingg, setSubmittingg] = useState(false)
