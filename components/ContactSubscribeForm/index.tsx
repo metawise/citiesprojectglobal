@@ -21,7 +21,7 @@ const SubscriptionForm = () => {
   const [formData_newsletter, setFormNewsletterData] = useState({
     input_8: '', // Name
     input_3: '', // Email
-    input_4: 'Contact',
+    input_4: 'Contact Form',
   })
   
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
