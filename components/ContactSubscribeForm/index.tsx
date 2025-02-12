@@ -16,7 +16,7 @@ const SubscriptionForm = () => {
     input_6: '', // Position
     input_7: '', // Message
     subscribe: false, // Checkbox
-    input_9: 'Newsletter Checkbox Selected',
+    input_9: 'Not Checked',
   })
   const [formData_newsletter, setFormNewsletterData] = useState({
     input_8: '', // Name
