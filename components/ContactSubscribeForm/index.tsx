@@ -10,17 +10,18 @@ const SubscriptionForm = () => {
   const [loading, setLoading] = useState(false)
 
   const [formData, setFormData] = useState({
-    input_1: '', // Name
+    input_8: '', // Name
     input_3: '', // Email
     input_5: '', // Company
     input_6: '', // Position
     input_7: '', // Message
     subscribe: false, // Checkbox
+    input_9: 'Newsletter Checkbox Selected',
   })
   const [formData_newsletter, setFormNewsletterData] = useState({
-    input_2: formData.input_1, // Name
+    input_8: '', // Name
     input_3: '', // Email
-    input_4: 'From Contact Form ',
+    input_4: 'From Contact Form Newsletter',
   })
   
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -101,7 +102,7 @@ const SubscriptionForm = () => {
       ) : (
         <form onSubmit={handleSubmit} className="grid gap-2">
           <label className="text-black font-bold">Name</label>
-          <input type="text" name="input_1" placeholder="Enter Name" value={formData.input_1} onChange={handleChange} className="border p-2" required />
+          <input type="text" name="input_8" placeholder="Enter Name" value={formData.input_8} onChange={handleChange} className="border p-2" required />
 
           <label className="text-black font-bold">Email</label>
           <input type="email" name="input_3" placeholder="Enter Email" value={formData.input_3} onChange={handleChange} className="border p-2" required />

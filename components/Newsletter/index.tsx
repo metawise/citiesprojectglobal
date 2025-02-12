@@ -21,7 +21,7 @@ const POSTS_QUERY = gql`
 
 export default function Newsletter() {
   const { loading, error, data } = useQuery(POSTS_QUERY)
-  const [formData, setFormData] = useState({ input_2: '', input_3: '' })
+  const [formData, setFormData] = useState({ input_8: '', input_3: '' })
   const [message, setMessage] = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
 
@@ -36,7 +36,7 @@ export default function Newsletter() {
     e.preventDefault() // Prevent the default form submission behavior
 
     // Basic validation to ensure fields are not empty
-    if (!formData.input_2 || !formData.input_3) {
+    if (!formData.input_8 || !formData.input_3) {
       setMessage('Name and email are required.')
       return
     }
@@ -128,7 +128,7 @@ export default function Newsletter() {
                 type="email"
                 name="input_2"
                 placeholder="Email"
-                value={formData.input_2}
+                value={formData.input_8}
                 onChange={handleChange}
                 className="bg-transparent border border-[#f6f6f626] p-[10px]"
                 required
