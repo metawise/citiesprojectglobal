@@ -21,16 +21,25 @@ const SubscriptionForm = () => {
   const [formData_newsletter, setFormNewsletterData] = useState({
     input_8: '', // Name
     input_3: '', // Email
-    input_4: 'From Contact Form Newsletter',
+    input_4: 'Contact',
   })
   
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, type, value } = event.target
-  
+    const isCheckbox = type === "checkbox";
+    const checked = isCheckbox ? (event.target as HTMLInputElement).checked : undefined;
+
+    // setFormData((prevData) => ({
+    //   ...prevData,
+    //   [name]: type === 'checkbox' ? (event.target as HTMLInputElement).checked : value,
+      
+    // }))
     setFormData((prevData) => ({
       ...prevData,
-      [name]: type === 'checkbox' ? (event.target as HTMLInputElement).checked : value,
-    }))
+      [name]: isCheckbox ? checked : value,
+      ...(name === "subscribe" && { input_9: checked ? "Checked" : "Unchecked" }), // Update input_9 when subscribe changes
+    }));
+  
     
     setFormNewsletterData((prevData) => ({
       ...prevData,
@@ -125,7 +134,7 @@ const SubscriptionForm = () => {
           <label className="text-black font-bold">
             <input type="checkbox" name="subscribe" checked={formData.subscribe} onChange={handleChange} /> I want to subscribe to emails
           </label>
-
+          
           {/* Google reCAPTCHA v2 Checkbox */}
           <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
