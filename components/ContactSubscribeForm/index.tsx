@@ -7,6 +7,7 @@ const SubscriptionForm = () => {
   const [submitted, setSubmitted] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
 
   const [formData, setFormData] = useState({
     input_1: '', // Name
@@ -36,6 +37,8 @@ const SubscriptionForm = () => {
       setMessage('Please complete the reCAPTCHA.')
       return
     }
+    
+    setLoading(true)
 
     try {
       const response = await axios.post('/api/submit-form', {
@@ -52,6 +55,8 @@ const SubscriptionForm = () => {
     } catch (error) {
       setMessage('Submission failed.')
       console.error(error)
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -95,7 +100,9 @@ const SubscriptionForm = () => {
             onChange={handleRecaptchaChange}
           />
 
-          <button type="submit" className="bg-green-500 text-white p-2 rounded">Submit</button>
+          <button type="submit" className={`p-2 rounded ${loading ? 'bg-gray-500' : 'bg-green-500'} text-white`} disabled={loading}>
+            {loading ? 'Submitting...' : 'Submit'}
+          </button>
         </form>
       )}
       {message && <p className="text-red-500">{message}</p>}
