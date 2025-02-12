@@ -17,13 +17,23 @@ const SubscriptionForm = () => {
     input_7: '', // Message
     subscribe: false, // Checkbox
   })
-
+  const [formData_newsletter, setFormNewsletterData] = useState({
+    input_2: '', // Name
+    input_3: '', // Email
+    input_4: 'From Contact Form ',
+  })
+  
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, type, value } = event.target
   
     setFormData((prevData) => ({
       ...prevData,
       [name]: type === 'checkbox' ? (event.target as HTMLInputElement).checked : value,
+    }))
+    
+    setFormNewsletterData((prevData) => ({
+      ...prevData,
+      [name]: value,
     }))
   }
 
@@ -37,10 +47,31 @@ const SubscriptionForm = () => {
       setMessage('Please complete the reCAPTCHA.')
       return
     }
-    
+      console.log(formData.subscribe);
     setLoading(true)
 
     try {
+        if(formData.subscribe == true){
+          const response_newsletter = await axios.post(
+            'https://backend.citiesprojectglobal.com/wp-json/gf/v2/forms/1/submissions',
+            formData_newsletter,
+            {
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Basic ${btoa(
+                  'ck_3b900686e6b6f05a64b49ff09163b1ae35017710:cs_a366847ab722d30837123aac4605cc07c1eeaac1',
+                )}`, // Basic Auth with API Key and Secret
+              },
+            },
+          )
+    
+          const responseData_newsletter = response_newsletter.data
+    
+          if (!responseData_newsletter.is_valid) {
+            setMessage(response_newsletter.data.message || 'Submission error.');
+            return false;
+          }
+        }
       const response = await axios.post('/api/submit-form', {
         ...formData,
         recaptcha_token: recaptchaToken,
