@@ -1,5 +1,4 @@
 import { Anton } from 'next/font/google'
-import translate from "google-translate-api-x";
 
 import Partner from '@/components/partner'
 import Newsletter from '@/components/Newsletter'
@@ -12,8 +11,6 @@ import Link from 'next/link'
 import MainComponent from '@/components/LightboxPdf'
 import Head from '../head'
 import { CONTACT_PAGE_POSTS_QUERY } from '@/queries/queries'
-import { getTranslation } from "@/lib/translate";
-import { cookies } from "next/headers";
 
 // Define the Anton font
 const anton = Anton({ weight: '400', subsets: ['latin'] })
@@ -52,8 +49,7 @@ const Contact = async (): Promise<JSX.Element> => {
   const response = await client.query<{ page: Page }>({
     query: CONTACT_PAGE_POSTS_QUERY,
   })
-  const cookieStore =await cookies();
-  const lang = cookieStore.get("lang")?.value || "en";
+
   const fields = response.data.page.contactpagefeilds
   return (
     <main className="md:w-[80%] mx-auto">
@@ -62,13 +58,12 @@ const Contact = async (): Promise<JSX.Element> => {
         <section className="md:flex">
           <div className="md:w-2/3">
             <h2 className="font-bold text-black md:text-left text-center md:text-[48px] text-[25px] leading-tight mb-4">
-            {await  getTranslation(fields.firstMainHeadingPart1, lang)}    
-           
+              {fields.firstMainHeadingPart1}
               <br />
-              { await getTranslation(fields.first_main_heading_part_2, lang)} 
+              {fields.first_main_heading_part_2}
             </h2>
             <p className="font-normal md:text-[18px] text-[15px] text-center md:text-left float-left text-black p-2 pb-3">
-              {} {await  getTranslation(fields.firstSubheading, lang)}
+              {fields.firstSubheading}
             </p>
           </div>
           <div className="md:w-1/3 pb-3 md:pb-0">
@@ -102,18 +97,17 @@ const Contact = async (): Promise<JSX.Element> => {
                 <h3
                   className={`${anton.className} uppercase text-center md:text-left md:text-[55px] text-[30px] text-[#000000] font-light leading-[68px]`}
                 >
-                { await getTranslation(fields.secondContactSectionHeading, lang)}  {}
+                  {fields.secondContactSectionHeading}
                 </h3>
                 <p className="md:w-[65%] text-[#000000] text-center md:text-left">
-                {  await getTranslation(fields.secondContactSectionDescription, lang)}   {}
+                  {fields.secondContactSectionDescription}
                 </p>
               </div>
             </div>
           </div>
           <div className="md:w-4/12 md:p-15 p-5 md:border-l md:border-[#dbdbdb78]">
             <p className="md:w-[75%] text-[#000000] pb-[20px] text-center md:text-left font-extrabold text-[18px]">
-              {}
-              {  fields.secondContactSectionFormHeading} 
+              {fields.secondContactSectionFormHeading}
             </p>
 
             <SubscriptionForm />
@@ -133,24 +127,20 @@ const Contact = async (): Promise<JSX.Element> => {
             </div>
             <div className="md:w-6/12 text-center mx-auto p-5 md:p-20">
               <h3 className="text-[15px] bg-[#fff] text-black font-bold mx-auto text-center border w-fit px-[14px]  rounded-[20px]">
-                
-                { fields.thirdSectionCenterUppertext} 
+                {fields.thirdSectionCenterUppertext}
               </h3>
               <h2 className="font-bold text-black  mx-auto text-center    md:text-[38px] text-[25px] leading-tight mb-4">
-              
-                { fields.thirdSectionCenterHeading} 
+                {fields.thirdSectionCenterHeading}
               </h2>
               <Image width={1000} height={1000} src={'/25.png'} className="" alt="" />
               <p className="text-[#000000]  md:w-[80%] md:text-[18px] mx-auto text-center ">
-            
-                { fields.thirdSectionCenterSubHeading} 
+                {fields.thirdSectionCenterSubHeading}
               </p>
               <div className="md:flex gap-5 md:pt-10 justify-center items-center ">
                 <Link href={fields.thirdSectionCenterFirstButtonLink} target="_blank">
                   {' '}
                   <button className=" mx-auto mt-[21px] md:mx-0 md:mt-0 flex items-center gap-3 text-black bg-[#A1CF5F] font-bold p-2 rounded-[5px]">
-                    {}
-                    { fields.thirdSectionCenterFirstButton} 
+                    {fields.thirdSectionCenterFirstButton}
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" id="arrow">
                       <g
                         fill="none"
@@ -169,7 +159,7 @@ const Contact = async (): Promise<JSX.Element> => {
                 <div className="max-w-fit mx-auto mt-[21px] md:mx-0 md:mt-0 border-[1px] border-solid border-black  flex items-center  gap-3 text-black bg-white font-bold p-2 rounded-[5px]">
                   <MainComponent
                     extraclass=""
-                    buttonText={ fields.thirdSectionCenterSecondButton} // Pass dynamic text as prop
+                    buttonText={fields.thirdSectionCenterSecondButton} // Pass dynamic text as prop
                     pdfUrl="api/proxy/"
                     // Pass the dynamic PDF URL
                   />
