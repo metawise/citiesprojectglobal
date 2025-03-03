@@ -13,7 +13,7 @@
     }, 
     async redirects() {
       return [
-        { source: "http://localhost:3001/2021/07/19/you-are-called-to-be-an-apprentice-of-jesus-what-does-that-really-look-like/", destination: "/", permanent: true },
+        { source: "/2021/07/19/you-are-called-to-be-an-apprentice-of-jesus-what-does-that-really-look-like/", destination: "/", permanent: true },
         { source: "/about/", destination: "/about-us", permanent: true },
         { source: "/author/jonichiang/", destination: "/", permanent: true },
         { source: "/2021/08/03/what-if-we-aim-to-bless-people-instead-of-convert-them/", destination: "/", permanent: true },
