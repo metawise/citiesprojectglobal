@@ -10,7 +10,7 @@
       NEXT_STRIPE_DONATION_RETURN_URL: process.env.NEXT_STRIPE_DONATION_RETURN_URL,
       NEXT_STRIPE_VANTAGE_RETURN_URL: process.env.NEXT_STRIPE_VANTAGE_RETURN_URL,
       NEXT_BACKEND_PDF_URL: process.env.NEXT_BACKEND_PDF_URL,
-    },
+    }, 
     async redirects() {
       return [
         { source: "http://localhost:3001/2021/07/19/you-are-called-to-be-an-apprentice-of-jesus-what-does-that-really-look-like/", destination: "/", permanent: true },
