@@ -341,7 +341,10 @@ div#goog-gt-tt {
 select.goog-te-combo option[value='en'] ,
 select.goog-te-combo option[value='fr'],
 select.goog-te-combo option[value='es'],
-select.goog-te-combo option[value='ru'] {
+select.goog-te-combo option[value='ru'],
+select.goog-te-combo option[value='ar'],
+select.goog-te-combo option[value='pt-PT']
+{
   display: block;font-size: 16px;
 }
 select.goog-te-combo option {
@@ -365,3 +368,4 @@ div#\:0\.targetLanguage {
     background: #a1cf5f;
 
 }
+
