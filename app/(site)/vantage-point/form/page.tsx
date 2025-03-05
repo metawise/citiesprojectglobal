@@ -6,7 +6,6 @@ import { gql } from '@apollo/client'
 import client from 'apollo-client'
 import SecondSection from '@/components/VantageForm'
 import { fetchData } from '@/lib/fetchData'
-export const fetchCache = 'force-no-store';
 
 export const revalidate = 60 // revalidate at most every 5 minutes
 
