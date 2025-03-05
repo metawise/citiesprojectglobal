@@ -11,6 +11,7 @@ import Link from 'next/link'
 import MainComponent from '@/components/LightboxPdf'
 import Head from '../head'
 import { CONTACT_PAGE_POSTS_QUERY } from '@/queries/queries'
+export const fetchCache = 'force-no-store';
 
 // Define the Anton font
 const anton = Anton({ weight: '400', subsets: ['latin'] })

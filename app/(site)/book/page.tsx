@@ -8,6 +8,7 @@ import { BOOK_PAGE_QUERY } from '@/queries/queries'
 import Head from '../head'
 import { fetchData } from '@/lib/fetchData'
 export const revalidate = 60 // revalidate at most every 5 minutes
+export const fetchCache = 'force-no-store';
 
 export default async function Book() {
   const data = await fetchData(BOOK_PAGE_QUERY)
