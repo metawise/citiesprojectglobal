@@ -24,6 +24,7 @@ import SwiperSectionLeaderhsip from '@/components/leadershipcommunityslider'
 import { LEADERSHIP_PAGE_QUERY, LEADERSHIP_CIRCLE_TESTIMONIALS } from '@/queries/queries'
 import { fetchData } from '@/lib/fetchData'
 import Head from '../head'
+export const fetchCache = 'force-no-store';
 
 export const revalidate = 60 // revalidate at most every 5 minutes
 
