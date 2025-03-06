@@ -4,7 +4,6 @@ import { useEffect } from 'react' // Import useEffect
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ScrollToTop from '@/components/ScrollToTop'
-import { ThemeProvider } from 'next-themes'
 import { Inter, Anton } from 'next/font/google' // Import both fonts
 import '../globals.css'
 import { GoogleAnalytics } from 'nextjs-google-analytics'

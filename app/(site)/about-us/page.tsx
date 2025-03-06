@@ -13,7 +13,7 @@ import { ABOUT_US_PAGE_QUERY } from '@/queries/queries'
 import { fetchData } from '@/lib/fetchData'
 export const fetchCache = 'force-no-store';
 
-export const revalidate = 60 // revalidate at most every 5 minutes
+export const revalidate = 60 
 
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
