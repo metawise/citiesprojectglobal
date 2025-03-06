@@ -51,10 +51,10 @@ const SingleBlogPage = async ({ params }: { params: Params }) => {
               className="text-lg md:text-[64px] font-bold text-gray-900 leading-tight"
               dangerouslySetInnerHTML={{ __html: post?.title }}
             />
-            <p className="text-gray-700 mt-4 text-[16px] md:text-[24px] max-w-[543px] leading-snug">
+            {/* <p className="text-gray-700 mt-4 text-[16px] md:text-[24px] max-w-[543px] leading-snug">
               You don’t have to search the Bible for very long to find passages highlighting the value and importance of
               community.
-            </p>
+            </p> */}
           </div>
         </div>
         {/* Right Section */}
