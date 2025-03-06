@@ -14,8 +14,7 @@ import Head from '../head'
 import { DONATION_PAGE_QUERY } from '@/queries/queries'
 export const revalidate = 60 // revalidate at most every 5 minutes
 const anton = Anton({ weight: '400', subsets: ['latin'] })
-export const fetchCache = 'force-no-store';
-
+export const fetchCache = 'force-no-store'
 
 export default async function Book() {
   // const data = await fetchData(POSTS_QUERY)

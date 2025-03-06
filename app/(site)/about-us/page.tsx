@@ -11,9 +11,9 @@ import Head from '../head'
 import MainComponent from '@/components/LightboxPdf'
 import { ABOUT_US_PAGE_QUERY } from '@/queries/queries'
 import { fetchData } from '@/lib/fetchData'
-export const fetchCache = 'force-no-store';
+export const fetchCache = 'force-no-store'
 
-export const revalidate = 60 
+export const revalidate = 60
 
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
