@@ -257,23 +257,25 @@ const Header = () => {
          
         </div>
 
-        {/* <div id="google_translate_element" className='' style=
+        <div id="google_translate_element" className='' style=
         {{ width: '19%',
           borderRadius: '10px',
           padding: '5px',
           justifyContent: 'center',
-          alignItems: 'center', }}></div> */}
+          alignItems: 'center', }}></div>
 
         <div className="social-media hidden md:flex md:gap-[10px] md:order-2 w-full max-w-[350px] space-x-3 md:space-x-0 rtl:space-x-reverse justify-end">
-        {/* <Script
+        <Script
      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></Script>
+
+    {/* Google Translate CSS */}
     <link
      rel="stylesheet"
      type="text/css"
      href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=CAM/d=0/rs=AN8SPfpIXxhebB2A47D9J-MACsXmFF6Vew/m=el_main_css"
     />
-        */}
+       
       
 
         <div className="px-4 lg:flex md:hidden md:items-center">
