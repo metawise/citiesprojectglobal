@@ -243,6 +243,21 @@ const nextConfig = {
         destination: '/articles/what-does-it-really-mean-to-love-one-another',
         permanent: true,
       },
+
+      {
+        source: '/2022/02/14/receiving-and-reflecting-gods-inherent-love-for-us',
+        destination: '/articles/receiving-and-reflecting-gods-inherent-love-for-us',
+        permanent: true,
+      },
+
+     
+
+      {
+        source: '/2021/06/28/our-fundamental-human-job-description-is-to-create-culture',
+        destination: '/articles/our-fundamental-human-job-description-is-to-create-culture',
+        permanent: true,
+      },
+
     ]
   },
 }
