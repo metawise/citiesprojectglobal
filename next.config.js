@@ -246,7 +246,7 @@ const nextConfig = {
 
       {
         source: '/2022/02/14/receiving-and-reflecting-gods-inherent-love-for-us',
-        destination: '/articles/receiving-and-reflecting-gods-inherent-love-for-us',
+        destination: '/articles',
         permanent: true,
       },
 
