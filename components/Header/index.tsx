@@ -16,7 +16,7 @@ const Header = () => {
   
     window.googleTranslateElementInit = () => {
       // new window.google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element2');
-     new window.google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+     new window.google.translate.TranslateElement({ pageLanguage: '' }, 'google_translate_element');
     };
   
    }, []);
