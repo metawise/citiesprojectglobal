@@ -21,7 +21,7 @@ import HomeAboutTheBook from '@/components/HomeAboutthebook'
 // import NewBannerSlider from '@/components/HeroBanner' // Import client component
 import VideoPopup from '@/components/SecondHomeVideoButton'
 import Head from './head'
-export const fetchCache = 'default-no-store';
+
 import {
   HOME_PAGE_QUERY,
   STORIES_QUERY,
