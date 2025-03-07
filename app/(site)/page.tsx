@@ -22,7 +22,7 @@ import HomeAboutTheBook from '@/components/HomeAboutthebook'
 import VideoPopup from '@/components/SecondHomeVideoButton'
 import Head from './head'
 export const fetchCache = 'no-store';
-
+ 
 import {
   HOME_PAGE_QUERY,
   STORIES_QUERY,
