@@ -11,7 +11,6 @@ import { PROGRAM_PAGE_QUERY, TESTIMONIAL_QUERY, PROGRAM_TESTIMONIAL_QUERY } from
 import Head from '../head'
 import { fetchData } from '@/lib/fetchData'
 export const revalidate = 60 // revalidate at most every 5 minutes
-export const fetchCache = 'force-no-store';
 
 export default async function Programs() {
   const data = await fetchData(PROGRAM_PAGE_QUERY)
