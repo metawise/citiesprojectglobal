@@ -117,7 +117,7 @@ const BlogPage = async () => {
                     <BlogCard
                       key={post.id}
                       index={index}
-                      image={post.featuredImage?.node?.link}
+                      image={post.featuredImage?.node?.sourceUrl}
                       date={formatDate}
                       title={post.title}
                       linkText="Read More"
