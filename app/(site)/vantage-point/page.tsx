@@ -21,7 +21,7 @@ const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 const page = async () => {
   const data = await fetchData(VANTAGEPOINT_QUERY)
-  console
+  console.log(data);
   const vantage = data.page.vintagePageFeild
   return (
     <div className="container mx-auto">
