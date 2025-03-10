@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import vantage from '/public/vantage-logo.png'
+// import vantage from '/public/vantage-logo.png'
 import starts from '/public/starts.png'
-import { gql } from '@apollo/client'
-import client from 'apollo-client'
+// import { gql } from '@apollo/client'
+// import client from 'apollo-client'
 import Link from 'next/link'
 import ReviewFirstSlider from '@/components/vantagereviewslider/Firstslider'
 import ReviewSecondSlider from '@/components/vantagereviewslider/Secondslider'
@@ -32,7 +32,7 @@ const page = async () => {
           </h2>
           <div className="max-w-[386px]">
             <Image
-              src={vantage.vintageMainRightImage?.node?.link}
+              src={vantage.vintageMainRightImage?.node?.sourceUrl}
               width="250"
               height="105"
               alt=""
@@ -45,7 +45,9 @@ const page = async () => {
 
       <section className="mx-auto max-w-[1480px] m:p-10 p-5 flex gap-3 flex-wrap relative md:flex-nowrap justify-between items-end mt-10">
         <Image
-          src={vantage.vintageSecondSection.vintageSecondSectionBackgroundImage?.node?.link || '/default-image.jpg'} // Fallback image
+          src={
+            vantage.vintageSecondSection.vintageSecondSectionBackgroundImage?.node?.sourceUrl || '/default-image.jpg'
+          } // Fallback image
           layout="fill"
           objectFit="cover"
           className="z-0"
@@ -90,7 +92,7 @@ const page = async () => {
         <div className="flex flex-wrap md:flex-nowrap justify-center items-center md:p-10 p-3 gap-6 mt-10">
           <div className="relative transform ">
             <Image
-              src={vantage.vintageThirdSection.vintageThirdSectionRowFirstImage?.node?.link}
+              src={vantage.vintageThirdSection.vintageThirdSectionRowFirstImage?.node?.sourceUrl}
               alt="Left Image"
               className="relative  rounded-lg "
               width={332}
@@ -100,7 +102,7 @@ const page = async () => {
 
           <div className="bg-lime-200 p-6 rounded-lg shadow-lg text-center e-full max-w-[412px] ">
             <Image
-              src={vantage.vintageThirdSection.vintageThirdSectionRowSecondImage?.node?.link}
+              src={vantage.vintageThirdSection.vintageThirdSectionRowSecondImage?.node?.sourceUrl}
               alt="Center Image"
               className="rounded-lg mb-4"
               width={400}
@@ -118,7 +120,7 @@ const page = async () => {
 
           <div className="relative transform ">
             <Image
-              src={vantage.vintageThirdSection.vintageThirdSectionRowThirdImage?.node?.link}
+              src={vantage.vintageThirdSection.vintageThirdSectionRowThirdImage?.node?.sourceUrl}
               alt="Left Image"
               className=" rounded-lg"
               width={332}
@@ -131,7 +133,7 @@ const page = async () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 md:p-20 p-5 bg-gray-100">
           <div className="w-full lg:w-[25%]">
             <Image
-              src={vantage.vintageFourthSection.vintageFourthSectionLeftImage?.node?.link}
+              src={vantage.vintageFourthSection.vintageFourthSectionLeftImage?.node?.sourceUrl}
               alt="Left Image"
               className="relative top-[0] lg:top-[-200px]"
               width={429}
@@ -175,7 +177,7 @@ const page = async () => {
 
           <div className="w-full md:w-[25%]">
             <Image
-              src={vantage.vintageFourthSection.vintageFourthSectionRightImage?.node?.link}
+              src={vantage.vintageFourthSection.vintageFourthSectionRightImage?.node?.sourceUrl}
               width={1000}
               height={1000}
               alt="Right Image"
@@ -198,7 +200,7 @@ const page = async () => {
               </p>
             </div>
             <Image
-              src={vantage.vintageFifthSection.vintageFifthSectionLeftImage?.node?.link}
+              src={vantage.vintageFifthSection.vintageFifthSectionLeftImage?.node?.sourceUrl}
               alt=""
               width={341}
               height={222}
@@ -206,7 +208,7 @@ const page = async () => {
           </div>
           <div>
             <Image
-              src={vantage.vintageFifthSection.vintageFifthSectionRightImage?.node?.link}
+              src={vantage.vintageFifthSection.vintageFifthSectionRightImage?.node?.sourceUrl}
               alt=""
               width={772}
               height={482}
@@ -215,7 +217,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className=" mt-30 mx-8 md:mx-0">
+      {/* <section className=" mt-30 mx-8 md:mx-0">
         <h2 className="lg:w-[62%] w-full mx-auto text-center text-black md:text-[30px] lg:text-[48px] text-[25px] font-bold leading-[30px] md:leading-[58px] mb-5">
           {vantage.vintageReviewSlider.vintageReviewSliderMainHeading}
         </h2>
@@ -227,13 +229,12 @@ const page = async () => {
             <ReviewFirstSlider />
           </div>
         </div>
-        {/* second row */}
         <div className="my-5 bg-white hidden">
           <div className="111 ">
             <ReviewSecondSlider />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="mx-auto max-w-[1480px] py-15">
         <h2 className="m-0 text-[22px] md:text-[30px] leading-[24px] md:leading-[54px]  lg:w-[37%] md:text-[40px] text-black font-bold">
@@ -243,7 +244,7 @@ const page = async () => {
         <div className="flex flex-wrap lg:flex-nowrap py-10">
           <div className="lg:w-1/3 w-full relative">
             <Image
-              src={vantage.vintageSeventhSection.vintageSeventhSectionFirstColumnImage?.node?.link}
+              src={vantage.vintageSeventhSection.vintageSeventhSectionFirstColumnImage?.node?.sourceUrl}
               alt=""
               layout="fill"
               className="object-cover"
@@ -285,7 +286,7 @@ const page = async () => {
               </div>
               <div className="lg:w-1/2 w-full relative">
                 <Image
-                  src={vantage.vintageSeventhSection.vintageSeventhSectionThirdColumnImage?.node?.link}
+                  src={vantage.vintageSeventhSection.vintageSeventhSectionThirdColumnImage?.node?.sourceUrl}
                   alt=""
                   className="object-cover"
                   layout="fill"
@@ -368,7 +369,7 @@ const page = async () => {
 
       <section className=" mx-auto  relative mt-0 lg:mt-[-280px] z-0 p-70 lg:h-[1580px] h-auto">
         <Image
-          src={vantage.vintageEightSection.vintageEightSectionBackgroundImage?.node?.link}
+          src={vantage.vintageEightSection.vintageEightSectionBackgroundImage?.node?.sourceUrl}
           className="object-cover lg:object-left object-left"
           style={{ transform: 'scaleX(-1)' }}
           layout="fill"
@@ -396,7 +397,7 @@ const page = async () => {
           <div className="flex p-0 lg:p-10  flex-wrap lg:flex-nowrap">
             <div className="lg:w-2/5 w-full relative">
               <Image
-                src={vantage.vintageNinthSection.vintageNinthSectionLeftSectionImage?.node?.link}
+                src={vantage.vintageNinthSection.vintageNinthSectionLeftSectionImage?.node?.sourceUrl}
                 alt=""
                 className="lg:absolute relative bottom-[0] lg:bottom-[10%] p-0 lg:p-[10px] w-[500px] h-[480px] object-cover lg:w-[auto] md:w-full"
                 width={1000}
@@ -416,7 +417,7 @@ const page = async () => {
               <div className="flex  flex-wrap md:flex-nowrap mt-2 gap-2">
                 <div className="md:w-1/3 w-full rounded">
                   <Image
-                    src={vantage.vintageNinthSection.vintageNinthSectionRightSectionRowFirstImage?.node?.link}
+                    src={vantage.vintageNinthSection.vintageNinthSectionRightSectionRowFirstImage?.node?.sourceUrl}
                     alt=""
                     className=""
                     width={1000}
@@ -444,7 +445,7 @@ const page = async () => {
           <div className="relative">
             <Image
               layout="fill"
-              src={vantage.vintageTenthSection.vintageTenthSectionFirstColumnImage?.node?.link}
+              src={vantage.vintageTenthSection.vintageTenthSectionFirstColumnImage?.node?.sourceUrl}
               className="object-top object-cover object-right xl:h-[363px]"
               alt="Vantage Image 1"
             />
@@ -489,7 +490,7 @@ const page = async () => {
           <div className="relative">
             <Image
               layout="fill"
-              src={vantage.vintageTenthSection.vintageTenthSectionFourthColumnImage?.node?.link}
+              src={vantage.vintageTenthSection.vintageTenthSectionFourthColumnImage?.node?.sourceUrl}
               className="object-cover object-center xl:h-[363px]"
               alt="Vantage Image 2"
             />

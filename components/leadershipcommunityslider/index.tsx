@@ -79,7 +79,7 @@ const SwiperSectionLeadership = ({ data }: { data: any }) => {
                   <div className="relative">
                     {/* Video Thumbnail */}
                     <Image
-                      src={course.watchOurCommunitySliderImage?.node?.link || 'default.png'}
+                      src={course.watchOurCommunitySliderImage?.node?.sourceUrl || 'default.png'}
                       className="h-[300px] w-[500px] object-cover rounded-md cursor-pointer"
                       onClick={() => openModal(course.watchOurCommunityVideoLink || 'default.mp4')}
                       alt="Video Thumbnail"

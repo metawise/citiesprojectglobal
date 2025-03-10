@@ -12,27 +12,27 @@ const POSTS_QUERY = gql`
         vantageFormThirdSection {
           vantageFormThirdSectionImage1 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage2 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage3 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage4 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage5 {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -53,7 +53,7 @@ export default async function LastFiveSection() {
             height={1000}
             width={1000}
             className=""
-            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage1?.node?.link}
+            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage1?.node?.sourceUrl}
           />
         </div>
         <div className=" ">
@@ -62,7 +62,7 @@ export default async function LastFiveSection() {
             height={1000}
             width={1000}
             className=""
-            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage2?.node?.link}
+            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage2?.node?.sourceUrl}
           />
         </div>
         <div className=" ">
@@ -71,7 +71,7 @@ export default async function LastFiveSection() {
             height={1000}
             width={1000}
             className=""
-            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage3?.node?.link}
+            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage3?.node?.sourceUrl}
           />
         </div>
         <div className="] ">
@@ -80,7 +80,7 @@ export default async function LastFiveSection() {
             height={1000}
             width={1000}
             className=""
-            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage4?.node?.link}
+            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage4?.node?.sourceUrl}
           />
         </div>
         <div className="  ">
@@ -89,7 +89,7 @@ export default async function LastFiveSection() {
             height={1000}
             width={1000}
             className=""
-            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage5?.node?.link}
+            src={data.page.leadershipPageFeilds.vantageFormThirdSection.vantageFormThirdSectionImage5?.node?.sourceUrl}
           />
         </div>
       </div>

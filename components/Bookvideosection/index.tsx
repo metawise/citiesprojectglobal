@@ -17,7 +17,7 @@ const POSTS_QUERY = gql`
         bookSixthSectionVideoMainHeading
         bookSixthSectionVideoThumbnail {
           node {
-            link
+            sourceUrl
           }
         }
       }
@@ -109,7 +109,7 @@ const VideoPlayer = ({ videoUrl = null, videoPoster = null }) => {
       <div className="relative mx-auto table md:w-[80%] video_hover">
         {/* {!isPlayed && (
           <Image
-            src={data.page.bookPageFeilds.bookSixthSectionVideoThumbnail?.node?.link}
+            src={data.page.bookPageFeilds.bookSixthSectionVideoThumbnail?.node?.sourceUrl}
             alt="Video Poster"
             width={1000}
             height={563}

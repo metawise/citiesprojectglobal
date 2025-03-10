@@ -15,14 +15,14 @@ const POSTS_QUERY = gql`
           leadershipVideoSectionMainHeading
           leadershipVideoSectionBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipVideoSectionDescripiton
           leadershipVideoSectionHeading
           leadershipVideoSectionTopImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -92,7 +92,7 @@ const VideoPlayer = () => {
         {/* {!isPlayed && (
           <Image
             src={
-              data.page.leadershipPageFeilds.leadershipVideoSection.leadershipVideoSectionBackgroundImage?.node?.link
+              data.page.leadershipPageFeilds.leadershipVideoSection.leadershipVideoSectionBackgroundImage?.node?.sourceUrl
             }
             alt="Video Poster"
             width={1000}
@@ -167,7 +167,7 @@ const VideoPlayer = () => {
               alt=""
               width={700}
               height={700}
-              src={data.page.leadershipPageFeilds.leadershipVideoSection.leadershipVideoSectionTopImage?.node?.link}
+              src={data.page.leadershipPageFeilds.leadershipVideoSection.leadershipVideoSectionTopImage?.node?.sourceUrl}
               className="w-[80%]"
             />
           </div>

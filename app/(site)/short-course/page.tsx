@@ -59,11 +59,12 @@ const ShortCoursePage = async () => {
           </div>
           <div
             className="flex justify-center relative flex-wrap md:flex-nowrap items-center w-full md:w-2/3 bg-cover bg-center  "
-            //  style={{ backgroundImage: `url('${shortcourse.shortCoursesFirstSection.shortCoursesMainBackgroundImage?.node?.link}')` }}>
+            //  style={{ backgroundImage: `url('${shortcourse.shortCoursesFirstSection.shortCoursesMainBackgroundImage?.node?.sourceUrl}')` }}>
           >
             <Image
               src={
-                shortcourse.shortCoursesFirstSection.shortCoursesMainBackgroundImage?.node?.link || '/default-image.jpg'
+                shortcourse.shortCoursesFirstSection.shortCoursesMainBackgroundImage?.node?.sourceUrl ||
+                '/default-image.jpg'
               } // Fallback image
               layout="fill"
               objectFit="cover"
@@ -71,21 +72,27 @@ const ShortCoursePage = async () => {
             />
             <div className="relative w-full md:w-7/12">
               <Image
-                src={shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionSecondColumnMainImage?.node?.link}
+                src={
+                  shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionSecondColumnMainImage?.node?.sourceUrl
+                }
                 className=" w-[80%]"
                 height={1000}
                 width={1000}
                 alt=""
               />
               <Image
-                src={shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionSecondColumnBottomImage?.node?.link}
+                src={
+                  shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionSecondColumnBottomImage?.node?.sourceUrl
+                }
                 height={1000}
                 width={1000}
                 alt=""
                 className="relative md:absolute w-[40%] bottom-[100px] right-[-100px]"
               />
               <Image
-                src={shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionSecondColumnUpperImage?.node?.link}
+                src={
+                  shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionSecondColumnUpperImage?.node?.sourceUrl
+                }
                 height={1000}
                 width={1000}
                 alt=""
@@ -101,7 +108,7 @@ const ShortCoursePage = async () => {
                   {shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionThirdColumnDescription}
                 </p>
                 <Image
-                  src={shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionThirdColumnImage?.node?.link}
+                  src={shortcourse.shortCoursesFirstSection.shortCoursesFirstSectionThirdColumnImage?.node?.sourceUrl}
                   height={1000}
                   width={1000}
                   alt=""
@@ -158,7 +165,7 @@ const ShortCoursePage = async () => {
               {/* {shortcourse.shortCoursesThirdSection.shortCoursesThirdSectionMainSecondRowCards.map((course,index) => (
                      <div key={index} className="m-4 rounded bg-white">
                         <Image
-                           src={course.shortCoursesThirdSectionMainSecondRowCardImage?.node?.link}
+                           src={course.shortCoursesThirdSectionMainSecondRowCardImage?.node?.sourceUrl}
                            alt={course.shortCoursesThirdSectionMainSecondRowCardTitle}
                            className="h-[200px]"
                            height={1000}
@@ -212,7 +219,7 @@ const ShortCoursePage = async () => {
       </section>
       <section className="md:py-20 py-0 md:mt-0 mt-10 container mx-auto max-w-[1480px]">
         <Image
-          src={shortcourse.shortCoursesFourthSection.shortCoursesFourthSectionImage?.node?.link}
+          src={shortcourse.shortCoursesFourthSection.shortCoursesFourthSectionImage?.node?.sourceUrl}
           alt=""
           className="mx-auto w-full md:w-[40%]"
           width={1000}
@@ -266,7 +273,7 @@ const ShortCoursePage = async () => {
           <div className="flex mb-4">
             <div className="mr-4">
               <Image
-                src={testimonial.shortCoursesSixthSectionReviewFirstUserImage?.node?.link}
+                src={testimonial.shortCoursesSixthSectionReviewFirstUserImage?.node?.sourceUrl}
                 alt={testimonial.shortCoursesSixthSectionReviewFirstUserName}
                 width={50}
                 height={50}
@@ -300,7 +307,7 @@ const ShortCoursePage = async () => {
                         <div className="flex mb-4">
                            <div className="mr-4">
                            <Image
-                              src={testimonial.shortCoursesSixthSectionReviewSecondUserImage?.node?.link}
+                              src={testimonial.shortCoursesSixthSectionReviewSecondUserImage?.node?.sourceUrl}
                               alt={testimonial.shortCourseSixthSectionReviewSecondUserName}
                               width={50}
                               height={50}

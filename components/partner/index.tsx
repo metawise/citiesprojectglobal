@@ -13,49 +13,49 @@ const PARTNER_QUERY = gql`
         firstsubtitlepatner
         imagefirst {
           node {
-            link
+            sourceUrl
           }
         }
         image2 {
           node {
-            link
+            sourceUrl
           }
         }
         image3 {
           node {
-            link
+            sourceUrl
           }
         }
         image4 {
           node {
-            link
+            sourceUrl
           }
         }
         image5 {
           node {
-            link
+            sourceUrl
           }
         }
         image6 {
           node {
-            link
+            sourceUrl
           }
         }
         image7 {
           node {
-            link
+            sourceUrl
           }
         }
         image8 {
           node {
-            link
+            sourceUrl
           }
         }
         partnerImages {
           partnerImages {
             addPartnersImages {
               node {
-                link
+                sourceUrl
               }
             }
           }
@@ -70,7 +70,7 @@ const PARTNER_QUERY = gql`
         designations
         rightimage {
           node {
-            link
+            sourceUrl
           }
         }
       }
@@ -102,7 +102,7 @@ export default async function Partner() {
                 className="p-5 border border-[#e3e2e2] h-[160px] grid items-center grayscale hover:grayscale-0 transition-all duration-300 ease-in-out hover:border-[#a1cf5f] hover:shadow-md"
               >
                 <Image
-                  src={partner_images.addPartnersImages?.node?.link || '/No_Image.jpg'}
+                  src={partner_images.addPartnersImages?.node?.sourceUrl || '/No_Image.jpg'}
                   alt=""
                   width={120}
                   height={120}

@@ -10,7 +10,7 @@ const POSTS_QUERY = gql`
         homeBannerSecond {
           homeBannerBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           homeBannerButtonLink
@@ -19,7 +19,7 @@ const POSTS_QUERY = gql`
           homeBannerHeadings
           homeBannerLatestPostImages {
             node {
-              link
+              sourceUrl
             }
           }
           homeBannerSubtitle

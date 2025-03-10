@@ -72,7 +72,7 @@ const HomeAboutTheBook = ({ data, Video_gif, videoUrl = null }) => {
             {data.page.homefifthsection.fifthheadingsimple}
           </p>
           <Image
-            src={data.page.homefifthsection.authorimage?.node?.link}
+            src={data.page.homefifthsection.authorimage?.node?.sourceUrl}
             className="md:inline block mx-auto"
             alt="image"
             width={232}
@@ -144,7 +144,7 @@ const HomeAboutTheBook = ({ data, Video_gif, videoUrl = null }) => {
             {/* Conditionally render the thumbnail or video */}
             {!isPlaying && !Played && (
               <Image
-                src={data.page.homefifthsection.fifthfirstimage?.node?.link}
+                src={data.page.homefifthsection.fifthfirstimage?.node?.sourceUrl}
                 alt="Video Thumbnail"
                 width={1000}
                 height={563}

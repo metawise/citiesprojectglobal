@@ -19,7 +19,7 @@ export default async function Book() {
       </h1>
       <section className="md:py-[42px] md:p-0 p-3">
         <Image
-          src={data.page.bookPageFeilds.bookSecondSectionImage?.node?.link}
+          src={data.page.bookPageFeilds.bookSecondSectionImage?.node?.sourceUrl}
           className=" mx-auto"
           alt=""
           layout="responsive"
@@ -31,7 +31,7 @@ export default async function Book() {
         <div className="flex md:flex-row-reverse sm:flex-col flex-col">
           <div className="md:w-5/12">
             <Image
-              src={data.page.bookPageFeilds.bookThirdSectionLeftImage?.node?.link}
+              src={data.page.bookPageFeilds.bookThirdSectionLeftImage?.node?.sourceUrl}
               className="mx-auto object-contain md:h-[50vh] sm:h-[30vh] sm:w-[100%]"
               alt=""
               // layout="responsive"
@@ -110,7 +110,7 @@ export default async function Book() {
           </div>
           <div className="lg:w-1/5 md:w-[50%] md:m-0 m-5 md:mx-0 mx-0 md:p-[0] grid justify-center items-center border border-[#DFDFDF] md:h-[250px]">
             <Image
-              src={data.page.bookPageFeilds.bookFourthSectionSecondColumnImage?.node?.link}
+              src={data.page.bookPageFeilds.bookFourthSectionSecondColumnImage?.node?.sourceUrl}
               alt=""
               layout=""
               width={150}
@@ -119,7 +119,7 @@ export default async function Book() {
           </div>
           <div className="lg:w-1/5 md:w-[50%]  md:m-0 m-5 md:mx-0 mx-0 md:p-[0] grid justify-center items-center border border-[#DFDFDF] md:h-[250px]">
             <Image
-              src={data.page.bookPageFeilds.bookFourthSectionThirdColumnImage?.node?.link}
+              src={data.page.bookPageFeilds.bookFourthSectionThirdColumnImage?.node?.sourceUrl}
               alt=""
               layout=""
               width={150}
@@ -128,7 +128,7 @@ export default async function Book() {
           </div>
           <div className="lg:w-1/5  md:w-[50%]  md:m-0 m-5 md:mx-0 mx-0 md:p-[0] grid justify-center items-center border border-[#DFDFDF] md:h-[250px]">
             <Image
-              src={data.page.bookPageFeilds.bookFourthSectionFourthColumnImage?.node?.link}
+              src={data.page.bookPageFeilds.bookFourthSectionFourthColumnImage?.node?.sourceUrl}
               alt=""
               layout=""
               width={150}
@@ -211,7 +211,7 @@ export default async function Book() {
               dangerouslySetInnerHTML={{ __html: data.page.bookPageFeilds.bookEigthSectionMainLeftDescription }}
             />
             <Image
-              src={data.page.bookPageFeilds.bookEigthSectionMainLeftImage?.node?.link}
+              src={data.page.bookPageFeilds.bookEigthSectionMainLeftImage?.node?.sourceUrl}
               className="hidden"
               alt=""
               layout="responsive"
@@ -221,7 +221,7 @@ export default async function Book() {
           </div>
           <div className="md:w-1/2 p-2">
             <Image
-              src={data.page.bookPageFeilds.bookEigthSectionMainRightImage?.node?.link}
+              src={data.page.bookPageFeilds.bookEigthSectionMainRightImage?.node?.sourceUrl}
               className="md:p-0 pb-0"
               alt=""
               layout="responsive"
@@ -248,7 +248,7 @@ export default async function Book() {
         <div className="md:flex md:mt-[90px] gap-6">
           <div className="">
             <Image
-              src={data.page.bookPageFeilds.bookNinthSectionLeftImage?.node?.link}
+              src={data.page.bookPageFeilds.bookNinthSectionLeftImage?.node?.sourceUrl}
               alt=""
               width={800}
               height={800}
@@ -293,7 +293,7 @@ export default async function Book() {
               </div>
             </div>
             <Image
-              src={data.page.bookPageFeilds.bookNinthSectionRightImage?.node?.link}
+              src={data.page.bookPageFeilds.bookNinthSectionRightImage?.node?.sourceUrl}
               alt=""
               width={1018}
               height={436}

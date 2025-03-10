@@ -13,7 +13,7 @@ export const HOME_PAGE_QUERY = gql`
         homeBannerSecond {
           homeBannerBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           homeBannerButtonLink
@@ -22,7 +22,7 @@ export const HOME_PAGE_QUERY = gql`
           homeBannerHeadings
           homeBannerLatestPostImages {
             node {
-              link
+              sourceUrl
             }
           }
           homeBannerSubtitle
@@ -33,7 +33,7 @@ export const HOME_PAGE_QUERY = gql`
       bannerHome {
         banner {
           node {
-            link
+            sourceUrl
           }
         }
         textBanner
@@ -54,24 +54,24 @@ export const HOME_PAGE_QUERY = gql`
         subtitleText
         firstRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         secondRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         bannersecondbackground {
           node {
-            link
+            sourceUrl
           }
         }
       }
       sectionHomethird {
         firstcolumnimage {
           node {
-            link
+            sourceUrl
           }
         }
         buttonLink1ThirdSection
@@ -82,7 +82,7 @@ export const HOME_PAGE_QUERY = gql`
         buttontxtfirst
         secondcolumnimage {
           node {
-            link
+            sourceUrl
           }
         }
         secondcolumnheading
@@ -90,7 +90,7 @@ export const HOME_PAGE_QUERY = gql`
         buttontxtsecond
         thirdcolumnimage {
           node {
-            link
+            sourceUrl
           }
         }
         thirdcolumnheading
@@ -102,7 +102,7 @@ export const HOME_PAGE_QUERY = gql`
         mainheadingfourth
         firstimage {
           node {
-            link
+            sourceUrl
           }
         }
         firstsubtitle1
@@ -110,7 +110,7 @@ export const HOME_PAGE_QUERY = gql`
         firstparagraph
         secondimage {
           node {
-            link
+            sourceUrl
           }
         }
         secondheading
@@ -118,7 +118,7 @@ export const HOME_PAGE_QUERY = gql`
         secondparagraph
         thirdimage {
           node {
-            link
+            sourceUrl
           }
         }
         thirdsubtitle
@@ -132,7 +132,7 @@ export const HOME_PAGE_QUERY = gql`
         buttonlinksecond
         fifthfirstimage {
           node {
-            link
+            sourceUrl
           }
         }
         fifthfirstsubtitle
@@ -140,7 +140,7 @@ export const HOME_PAGE_QUERY = gql`
         textbuttonsecond
         authorimage {
           node {
-            link
+            sourceUrl
           }
         }
         authortitle
@@ -152,42 +152,42 @@ export const HOME_PAGE_QUERY = gql`
         firstsubtitlepatner
         imagefirst {
           node {
-            link
+            sourceUrl
           }
         }
         image5 {
           node {
-            link
+            sourceUrl
           }
         }
         image2 {
           node {
-            link
+            sourceUrl
           }
         }
         image3 {
           node {
-            link
+            sourceUrl
           }
         }
         image4 {
           node {
-            link
+            sourceUrl
           }
         }
         image6 {
           node {
-            link
+            sourceUrl
           }
         }
         image7 {
           node {
-            link
+            sourceUrl
           }
         }
         image8 {
           node {
-            link
+            sourceUrl
           }
         }
         textninthbox
@@ -200,7 +200,7 @@ export const HOME_PAGE_QUERY = gql`
         designations
         rightimage {
           node {
-            link
+            sourceUrl
           }
         }
       }
@@ -392,28 +392,28 @@ export const BOOK_PAGE_QUERY = gql`
         }
         bookThirdSectionLeftImage {
           node {
-            link
+            sourceUrl
           }
         }
 
         bookSecondSectionImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookFourthSectionThirdColumnImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookFourthSectionSecondColumnImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookFourthSectionFourthColumnImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookNinthSectionMainLeftHeading
@@ -423,12 +423,12 @@ export const BOOK_PAGE_QUERY = gql`
         bookNinthSectionRightSecondColumnText
         bookNinthSectionRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookNinthSectionLeftImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookEigthSectionMainHeading
@@ -438,12 +438,12 @@ export const BOOK_PAGE_QUERY = gql`
         bookNinthSectionRightSecondColumnButtonText
         bookEigthSectionMainLeftImage {
           node {
-            link
+            sourceUrl
           }
         }
         bookEigthSectionMainRightImage {
           node {
-            link
+            sourceUrl
           }
         }
       }
@@ -465,7 +465,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipEightSectionFirstRowFirstColumnHeading
           leadershipEightSectionFirstRowSecondColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipEightSectionFirstRowThirdDescription
@@ -474,14 +474,14 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipEightSectionMainHeading
           leadershipEightSectionSecondRowFirstImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipEightSectionSecondRowSecondDescription
           leadershipEightSectionSecondRowSecondHeading
           leadershipEightSectionSecondRowThirdImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -490,7 +490,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
             leadershipEleventhFirstText
             leadershipEleventhFirstImage {
               node {
-                link
+                sourceUrl
               }
             }
           }
@@ -500,7 +500,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipEleventhSectionSecondDescription
           leadershipEleventhSectionSecondImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -509,7 +509,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipFifthSectionFirstColumnHeading
           leadershipFifthSectionFirstColumnImages {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipFifthSectionSecondColumnDescription1
@@ -521,7 +521,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipFifthSectionSecondColumnMainHeading
           leadershipFifthSectionThirdColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -531,19 +531,19 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipFirstSectionSecondColumnHeading
           leadershipFirstSectionFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipFirstSectionThirdColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
         leadershipFourthSectionFields {
           leadershipFourthSectionFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipFourthSectionMainHeading
@@ -556,14 +556,14 @@ export const LEADERSHIP_PAGE_QUERY = gql`
         leadershipNinthSection {
           leadershipNinthSectionFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipNinthSectionMainHeading
           leadershipNinthSectionSecondColumnText
           leadershipNinthSectionThirdColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -574,13 +574,13 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipSecondSectionFirstColumnHeading
           leadershipSecondSectionSecondColumnBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipSecondSectionSecondColumnBox {
             leadershipSecondSectionSecondColumnBoxButtonLink {
               node {
-                link
+                sourceUrl
               }
             }
             leadershipSecondSectionSecondColumnBoxButtonText
@@ -595,7 +595,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipSeventhSectionMainHeading
           leadershipSeventhSectionMainImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipSeventhSectionSubheading
@@ -603,7 +603,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
         leadershipSixthSectionFields {
           leadershipSixthSectionFirstRowFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipSixthSectionFirstRowSecondColumnDescription
@@ -613,18 +613,18 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipSixthSectionSecondRowSecondColumnDescription
           leadershipSixthSectionSecondRowFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipSixthSectionSecondRowSecondColumnHeading
           leadershipSixthSectionSecondRowThirdColumnImages {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipSixthSectionThirdRowFirstColumnImages {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipSixthSectionThirdRowSecondsColumnDescription
@@ -644,7 +644,7 @@ export const LEADERSHIP_PAGE_QUERY = gql`
             leadershipThirdSectionBoxHeading
             leadershipThirdSectionBoxImages {
               node {
-                link
+                sourceUrl
               }
             }
           }
@@ -663,12 +663,12 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipTwelfthSectionSecondRowFirstColumnHeading
           leadershipTwelfthSectionSecondRowSecondColumnImage1 {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipTwelfthSectionSecondRowSecondColumnImage2 {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -676,41 +676,41 @@ export const LEADERSHIP_PAGE_QUERY = gql`
           leadershipVideoSectionMainHeading
           leadershipVideoSectionBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           leadershipVideoSectionDescripiton
           leadershipVideoSectionHeading
           leadershipVideoSectionTopImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
         vantageFormThirdSection {
           vantageFormThirdSectionImage1 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage2 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage3 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage4 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage5 {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -726,7 +726,7 @@ export const STORIES_QUERY = gql`
       nodes {
         featuredImage {
           node {
-            link
+            sourceUrl
           }
         }
         title
@@ -796,7 +796,7 @@ export const PROGRAM_PAGE_QUERY = gql`
         firstSectionMainHeading
         secondSectionImage {
           node {
-            link
+            sourceUrl
           }
         }
         secondSectionLeftAuthorName
@@ -814,7 +814,7 @@ export const PROGRAM_PAGE_QUERY = gql`
           columnsubtitleProgram
           columnimages_program {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -853,7 +853,7 @@ export const ARTICLES_PAGE_QUERY = gql`
         blogSecondSection {
           blogPageLeft {
             node {
-              link
+              sourceUrl
             }
           }
           blogPageRightButtonText
@@ -864,7 +864,7 @@ export const ARTICLES_PAGE_QUERY = gql`
           blogPageRightUpperSubtitle
           blogPageRightImage {
             node {
-              link
+              sourceUrl
             }
           }
           blogPageRightButtonLink {
@@ -949,7 +949,7 @@ export const VANTAGEPOINT_QUERY = gql`
         vintageEightSection {
           vintageEightSectionBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageEightSectionDescription
@@ -959,14 +959,14 @@ export const VANTAGEPOINT_QUERY = gql`
         vintageFifthSection {
           vintageFifthSectionLeftImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageFifthSectionMainDescription
           vintageFifthSectionMainHeading
           vintageFifthSectionRightImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -977,12 +977,12 @@ export const VANTAGEPOINT_QUERY = gql`
           vintageFourthSectionHeading
           vintageFourthSectionLeftImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageFourthSectionRightImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -990,20 +990,20 @@ export const VANTAGEPOINT_QUERY = gql`
         vintageMainHeading
         vintageMainRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         vintageNinthSection {
           vintageNinthSectionLeftSectionImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageNinthSectionRightSectionDescription
           vintageNinthSectionRightSectionMainHeading
           vintageNinthSectionRightSectionRowFirstImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageNinthSectionRightSectionRowSecondDescription
@@ -1013,7 +1013,7 @@ export const VANTAGEPOINT_QUERY = gql`
           vintageReviewSliderFirstReviewRow {
             vintageReviewSliderFirstUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             vintageReviewSliderReviewFirstReview
@@ -1026,7 +1026,7 @@ export const VANTAGEPOINT_QUERY = gql`
             vintageReviewSliderReviewSecondReview
             vintageReviewSliderReviewSecondUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             vintageReviewSliderReviewSecondUserName
@@ -1036,7 +1036,7 @@ export const VANTAGEPOINT_QUERY = gql`
         vintageSecondSection {
           vintageSecondSectionBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageSecondSectionLeftText
@@ -1050,7 +1050,7 @@ export const VANTAGEPOINT_QUERY = gql`
         vintageSeventhSection {
           vintageSeventhSectionFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageSeventhSectionLastRowContent {
@@ -1071,19 +1071,19 @@ export const VANTAGEPOINT_QUERY = gql`
           vintageSeventhSectionSecondColumnDescription
           vintageSeventhSectionThirdColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
         vintageTenthSection {
           vintageTenthSectionFirstColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageTenthSectionFourthColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageTenthSectionSecondColumnMainDescription
@@ -1098,19 +1098,19 @@ export const VANTAGEPOINT_QUERY = gql`
           vintageThirdSectionMainHeading
           vintageThirdSectionRowFirstImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageThirdSectionRowSecondDescription
           vintageThirdSectionRowSecondHeading
           vintageThirdSectionRowSecondImage {
             node {
-              link
+              sourceUrl
             }
           }
           vintageThirdSectionRowThirdImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -1126,7 +1126,7 @@ export const HOME_HERO_NEWS_QUERY = gql`
       nodes {
         featuredImage {
           node {
-            link
+            sourceUrl
           }
         }
         title
@@ -1162,29 +1162,29 @@ export const SHORT_COURSE_PAGE_QUERY = gql`
           shortCoursesFirstSectionFirstColumnText
           shortCoursesFirstSectionSecondColumnBottomImage {
             node {
-              link
+              sourceUrl
             }
           }
           shortCoursesFirstSectionSecondColumnMainImage {
             node {
-              link
+              sourceUrl
             }
           }
           shortCoursesFirstSectionSecondColumnUpperImage {
             node {
-              link
+              sourceUrl
             }
           }
           shortCoursesFirstSectionThirdColumnDescription
           shortCoursesFirstSectionThirdColumnHeading
           shortCoursesFirstSectionThirdColumnImage {
             node {
-              link
+              sourceUrl
             }
           }
           shortCoursesMainBackgroundImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -1194,7 +1194,7 @@ export const SHORT_COURSE_PAGE_QUERY = gql`
           shortCoursesFourthSectionHeading
           shortCoursesFourthSectionImage {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -1211,7 +1211,7 @@ export const SHORT_COURSE_PAGE_QUERY = gql`
             shortCoursesSixthSectionReviewFirstReview
             shortCoursesSixthSectionReviewFirstUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             shortCoursesSixthSectionReviewFirstUserName
@@ -1224,7 +1224,7 @@ export const SHORT_COURSE_PAGE_QUERY = gql`
             shortCoursesSixthSectionReviewSecondReview
             shortCoursesSixthSectionReviewSecondUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             shortCoursesSixthSectionReviewSecondUserStatus
@@ -1238,7 +1238,7 @@ export const SHORT_COURSE_PAGE_QUERY = gql`
             shortCoursesThirdSectionMainSecondRowCardButtonText
             shortCoursesThirdSectionMainSecondRowCardImage {
               node {
-                link
+                sourceUrl
               }
             }
             shortCoursesThirdSectionMainSecondRowCardPrice
@@ -1277,12 +1277,12 @@ export const DONATION_PAGE_QUERY = gql`
         donateFifthSectionButtonText
         donateThirdSectionImage {
           node {
-            link
+            sourceUrl
           }
         }
         donateSecondSectionRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         donateSecondSectionLeftFaqs {
@@ -1292,17 +1292,17 @@ export const DONATION_PAGE_QUERY = gql`
         }
         donateFourthSectionThirdImage {
           node {
-            link
+            sourceUrl
           }
         }
         donateFourthSectionSecondImage {
           node {
-            link
+            sourceUrl
           }
         }
         donateFourthSection {
           node {
-            link
+            sourceUrl
           }
         }
       }
@@ -1325,7 +1325,7 @@ export const CONTACT_PAGE_POSTS_QUERY = gql`
         firstMainHeadingPart1
         firstRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         firstSubheading
@@ -1334,7 +1334,7 @@ export const CONTACT_PAGE_POSTS_QUERY = gql`
         secondContactSectionFormHeading
         secondContactSectionImage {
           node {
-            link
+            sourceUrl
           }
         }
         secondContactSectionHeading
@@ -1347,12 +1347,12 @@ export const CONTACT_PAGE_POSTS_QUERY = gql`
         thirdSectionCenterSecondButtonLink
         thirdSectionLeftImage {
           node {
-            link
+            sourceUrl
           }
         }
         thirdSectionRightImage {
           node {
-            link
+            sourceUrl
           }
         }
       }
@@ -1371,7 +1371,7 @@ export const LEADERSHIP_CIRCLE_TESTIMONIALS = gql`
             watchOurCommunityVideoLink
             watchOurCommunitySliderImage {
               node {
-                link
+                sourceUrl
               }
             }
           }

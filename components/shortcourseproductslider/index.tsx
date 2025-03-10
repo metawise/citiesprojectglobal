@@ -23,7 +23,7 @@ const POSTS_QUERY = gql`
             shortCoursesThirdSectionMainSecondRowCardButtonText
             shortCoursesThirdSectionMainSecondRowCardImage {
               node {
-                link
+                sourceUrl
               }
             }
             shortCoursesThirdSectionMainSecondRowCardPrice
@@ -112,7 +112,7 @@ const SwiperSectionshortcourses = () => {
               <SwiperSlide key={index} className=" text-lg bg-white">
                 <div key={index} className="m-4 rounded bg-white">
                   <Image
-                    src={course.shortCoursesThirdSectionMainSecondRowCardImage?.node?.link || 'Untitled'}
+                    src={course.shortCoursesThirdSectionMainSecondRowCardImage?.node?.sourceUrl || 'Untitled'}
                     alt={course.shortCoursesThirdSectionMainSecondRowCardTitle}
                     className="h-[200px]"
                     height={1000}

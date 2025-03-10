@@ -19,12 +19,12 @@ export const revalidate = 60 // revalidate at most every 5 minutes
 
 interface ContactPageFields {
   firstMainHeadingPart1: string
-  firstRightImage?: { node?: { link?: string } }
+  firstRightImage?: { node?: { sourceUrl?: string } }
   firstSubheading: string
   first_main_heading_part_2: string
   secondContactSectionDescription: string
   secondContactSectionFormHeading: string
-  secondContactSectionImage?: { node?: { link?: string } }
+  secondContactSectionImage?: { node?: { sourceUrl?: string } }
   secondContactSectionHeading: string
   thirdSectionCenterFirstButtonLink: string
   thirdSectionCenterSecondButtonLink: string
@@ -33,8 +33,8 @@ interface ContactPageFields {
   thirdSectionCenterSecondButton: string
   thirdSectionCenterSubHeading: string
   thirdSectionCenterUppertext: string
-  thirdSectionLeftImage?: { node?: { link?: string } }
-  thirdSectionRightImage?: { node?: { link?: string } }
+  thirdSectionLeftImage?: { node?: { sourceUrl?: string } }
+  thirdSectionRightImage?: { node?: { sourceUrl?: string } }
 }
 
 interface Page {
@@ -70,7 +70,7 @@ const Contact = async (): Promise<JSX.Element> => {
             <Link href="#newsletter">
               {' '}
               <Image
-                src={fields.firstRightImage?.node?.link || ''}
+                src={fields.firstRightImage?.node?.sourceUrl || ''}
                 className="w-[81%] mx-auto md:mx-0 p-2 md:p-0"
                 alt="First Section"
                 width={800}
@@ -86,7 +86,7 @@ const Contact = async (): Promise<JSX.Element> => {
             <div className="md:flex items-center">
               <div className="md:w-1/2 table mx-auto md:block md:mx-0">
                 <Image
-                  src={fields.secondContactSectionImage?.node?.link || ''}
+                  src={fields.secondContactSectionImage?.node?.sourceUrl || ''}
                   alt="Second Section" // For responsive images
                   width={800} // Set a default width
                   height={500}
@@ -122,7 +122,7 @@ const Contact = async (): Promise<JSX.Element> => {
                 height={1000}
                 className="md:absolute top-30"
                 alt=""
-                src={fields.thirdSectionLeftImage?.node?.link || '/default-image.png'}
+                src={fields.thirdSectionLeftImage?.node?.sourceUrl || '/default-image.png'}
               />
             </div>
             <div className="md:w-6/12 text-center mx-auto p-5 md:p-20">
@@ -183,7 +183,7 @@ const Contact = async (): Promise<JSX.Element> => {
               <Image
                 width={1000}
                 height={1000}
-                src={fields.thirdSectionRightImage?.node?.link || '/default-image.png'}
+                src={fields.thirdSectionRightImage?.node?.sourceUrl || '/default-image.png'}
                 className="md:absolute top-30 right-0"
                 alt=""
               />

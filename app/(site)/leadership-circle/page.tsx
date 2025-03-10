@@ -45,7 +45,7 @@ const page = async () => {
               <Image
                 src={
                   data.page.leadershipPageFeilds.leadershipFirstSectionFeilds.leadershipFirstSectionFirstColumnImage
-                    ?.node?.link
+                    ?.node?.sourceUrl
                 }
                 alt="Group Discussion"
                 width={1000}
@@ -75,7 +75,7 @@ const page = async () => {
               <Image
                 src={
                   data.page.leadershipPageFeilds.leadershipFirstSectionFeilds.leadershipFirstSectionThirdColumnImage
-                    ?.node?.link
+                    ?.node?.sourceUrl
                 }
                 alt="Woman in business"
                 width={1000}
@@ -126,7 +126,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipSecondSectionFields
-                  .leadershipSecondSectionSecondColumnBackgroundImage?.node?.link
+                  .leadershipSecondSectionSecondColumnBackgroundImage?.node?.sourceUrl
               }
               alt="Speaker Image"
               layout="fill"
@@ -218,7 +218,7 @@ const page = async () => {
                 <Image
                   src={
                     data.page.leadershipPageFeilds.leadershipThirdSectionFields.leadershipThirdSectionBox[0]
-                      .leadershipThirdSectionBoxImages?.node?.link
+                      .leadershipThirdSectionBoxImages?.node?.sourceUrl
                   }
                   alt="Discussion Image"
                   width={1000}
@@ -249,7 +249,7 @@ const page = async () => {
                 <Image
                   src={
                     data.page.leadershipPageFeilds.leadershipThirdSectionFields.leadershipThirdSectionBox[1]
-                      .leadershipThirdSectionBoxImages?.node?.link
+                      .leadershipThirdSectionBoxImages?.node?.sourceUrl
                   }
                   alt="Collaboration Image"
                   width={1000}
@@ -279,7 +279,7 @@ const page = async () => {
                 <Image
                   src={
                     data.page.leadershipPageFeilds.leadershipThirdSectionFields.leadershipThirdSectionBox[2]
-                      .leadershipThirdSectionBoxImages?.node?.link
+                      .leadershipThirdSectionBoxImages?.node?.sourceUrl
                   }
                   alt="Transformation Tools"
                   width={1000}
@@ -324,7 +324,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipFourthSectionFields.leadershipFourthSectionFirstColumnImage
-                  ?.node?.link
+                  ?.node?.sourceUrl
               }
               alt="Transformation Tools"
               width={539}
@@ -376,7 +376,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipFifthSectionFields.leadershipFifthSectionFirstColumnImages
-                  ?.node?.link
+                  ?.node?.sourceUrl
               }
               alt="Transformation Tools"
               width={800}
@@ -431,7 +431,7 @@ const page = async () => {
                 <Image
                   src={
                     data.page.leadershipPageFeilds.leadershipFifthSectionFields.leadershipFifthSectionThirdColumnImage
-                      ?.node?.link
+                      ?.node?.sourceUrl
                   }
                   alt=""
                   width={800}
@@ -456,7 +456,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipSixthSectionFields
-                  .leadershipSixthSectionFirstRowFirstColumnImage?.node?.link
+                  .leadershipSixthSectionFirstRowFirstColumnImage?.node?.sourceUrl
               }
               alt=""
               width={714}
@@ -486,7 +486,7 @@ const page = async () => {
               <Image
                 src={
                   data.page.leadershipPageFeilds.leadershipSixthSectionFields
-                    .leadershipSixthSectionSecondRowFirstColumnImage?.node?.link
+                    .leadershipSixthSectionSecondRowFirstColumnImage?.node?.sourceUrl
                 }
                 alt=""
                 width={319}
@@ -513,7 +513,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipSixthSectionFields
-                  .leadershipSixthSectionSecondRowThirdColumnImages?.node?.link
+                  .leadershipSixthSectionSecondRowThirdColumnImages?.node?.sourceUrl
               }
               alt=""
               className="rounded-md"
@@ -530,7 +530,7 @@ const page = async () => {
               <Image
                 src={
                   data.page.leadershipPageFeilds.leadershipSixthSectionFields
-                    .leadershipSixthSectionThirdRowFirstColumnImages?.node?.link
+                    .leadershipSixthSectionThirdRowFirstColumnImages?.node?.sourceUrl
                 }
                 alt=""
                 width={319}
@@ -587,7 +587,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipEightSectionFields.leadershipEightSectionSecondRowFirstImage
-                  ?.node?.link
+                  ?.node?.sourceUrl
               }
               alt=""
               width={453}
@@ -612,7 +612,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipEightSectionFields
-                  .leadershipEightSectionFirstRowSecondColumnImage?.node?.link
+                  .leadershipEightSectionFirstRowSecondColumnImage?.node?.sourceUrl
               }
               alt=""
               width={453}
@@ -640,7 +640,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipEightSectionFields.leadershipEightSectionSecondRowThirdImage
-                  ?.node?.link
+                  ?.node?.sourceUrl
               }
               alt=""
               width={453}
@@ -662,7 +662,7 @@ const page = async () => {
                 className="w-full"
                 src={
                   data.page.leadershipPageFeilds.leadershipNinthSection.leadershipNinthSectionFirstColumnImage?.node
-                    ?.link
+                    ?.sourceUrl
                 }
                 alt=""
                 width={251}
@@ -679,7 +679,8 @@ const page = async () => {
             <Image
               className=""
               src={
-                data.page.leadershipPageFeilds.leadershipNinthSection.leadershipNinthSectionThirdColumnImage?.node?.link
+                data.page.leadershipPageFeilds.leadershipNinthSection.leadershipNinthSectionThirdColumnImage?.node
+                  ?.sourceUrl
               }
               alt=""
               width={1000}
@@ -720,7 +721,7 @@ const page = async () => {
               <Image
                 src={
                   data.page.leadershipPageFeilds.leadershipSeventhSectionFields.leadershipSeventhSectionMainImage?.node
-                    ?.link
+                    ?.sourceUrl
                 }
                 width={603}
                 height={510}
@@ -792,7 +793,7 @@ const page = async () => {
                   alt=""
                   src={
                     data.page.leadershipPageFeilds.leadershipEleventhSection.leadershipEleventhSectionFirstSection[0]
-                      .leadershipEleventhFirstImage?.node?.link
+                      .leadershipEleventhFirstImage?.node?.sourceUrl
                   }
                   className="mx-auto md:mx-0"
                 />
@@ -810,7 +811,7 @@ const page = async () => {
                   alt=""
                   src={
                     data.page.leadershipPageFeilds.leadershipEleventhSection.leadershipEleventhSectionFirstSection[1]
-                      .leadershipEleventhFirstImage?.node?.link
+                      .leadershipEleventhFirstImage?.node?.sourceUrl
                   }
                   className="mx-auto md:mx-0"
                 />
@@ -828,7 +829,7 @@ const page = async () => {
                   alt=""
                   src={
                     data.page.leadershipPageFeilds.leadershipEleventhSection.leadershipEleventhSectionFirstSection[2]
-                      .leadershipEleventhFirstImage?.node?.link
+                      .leadershipEleventhFirstImage?.node?.sourceUrl
                   }
                   className="mx-auto md:mx-0"
                 />
@@ -849,7 +850,7 @@ const page = async () => {
                 height={466}
                 src={
                   data.page.leadershipPageFeilds.leadershipEleventhSection.leadershipEleventhSectionSecondImage?.node
-                    ?.link
+                    ?.sourceUrl
                 }
               />
 
@@ -922,7 +923,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipTwelfthSection
-                  .leadershipTwelfthSectionSecondRowSecondColumnImage2?.node?.link
+                  .leadershipTwelfthSectionSecondRowSecondColumnImage2?.node?.sourceUrl
               }
               className=""
               alt=""
@@ -932,7 +933,7 @@ const page = async () => {
             <Image
               src={
                 data.page.leadershipPageFeilds.leadershipTwelfthSection
-                  .leadershipTwelfthSectionSecondRowSecondColumnImage1?.node?.link
+                  .leadershipTwelfthSectionSecondRowSecondColumnImage1?.node?.sourceUrl
               }
               className="absolute top-[20px] left-[-70px] "
               alt=""

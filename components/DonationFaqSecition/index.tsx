@@ -15,7 +15,7 @@ const POSTS_QUERY = gql`
         donateSecondSectionLeftHeading
         donateSecondSectionRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         donateSecondSectionLeftFaqs {

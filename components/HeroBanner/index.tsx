@@ -1,18 +1,18 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import Link from "next/link";
-import { Anton } from "next/font/google";
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination } from 'swiper/modules'
+import Link from 'next/link'
+import { Anton } from 'next/font/google'
 
-const anton = Anton({ weight: "400", subsets: ["latin"] });
+const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 interface BannerProps {
-  banners: any[]; // Define more specific types if possible
+  banners: any[] // Define more specific types if possible
 }
 
 const NewBannerSlider: React.FC<BannerProps> = ({ banners }) => {
@@ -54,12 +54,7 @@ const NewBannerSlider: React.FC<BannerProps> = ({ banners }) => {
                   className="flex w-fit items-center gap-2.5 bg-[#A1CF5F] font-bold text-black text-[13px] md:text-sm py-1 md:py-3 px-6 rounded-lg transition duration-300"
                 >
                   {banner.homeBannerButtonText}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    id="arrow"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" id="arrow">
                     <g
                       fill="none"
                       fillRule="evenodd"
@@ -78,7 +73,7 @@ const NewBannerSlider: React.FC<BannerProps> = ({ banners }) => {
                 alt="Banner Image"
                 width={800}
                 height={500}
-                src={banner.homeBannerLatestPostImages?.node?.link || ""}
+                src={banner.homeBannerLatestPostImages?.node?.sourceUrl || ''}
                 className="container md:absolute right-[29px] bottom-[0%] w-3/12 p-4"
               />
             </div>
@@ -86,7 +81,7 @@ const NewBannerSlider: React.FC<BannerProps> = ({ banners }) => {
         </SwiperSlide>
       ))}
     </Swiper>
-  );
-};
+  )
+}
 
-export default NewBannerSlider;
+export default NewBannerSlider

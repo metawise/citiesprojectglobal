@@ -94,7 +94,7 @@ export default async function Home() {
           <div className="hero-section relative w-full bg-cover bg-center h-[90vh] md:h-[850px]">
             {' '}
             <Image
-              src={data.page.bannerHome.banner?.node?.link}
+              src={data.page.bannerHome.banner?.node?.sourceUrl}
               layout="fill"
               alt="Programming meme"
               className="object-cover"
@@ -150,11 +150,11 @@ export default async function Home() {
 
       <section
         className="discover-design-section w-full relative bg-cover bg-center pt-[100px] md:pt-0"
-        // style={{ backgroundImage: `url('${data.page.bannerHomesecond.bannersecondbackground?.node?.link}')` }}
+        // style={{ backgroundImage: `url('${data.page.bannerHomesecond.bannersecondbackground?.node?.sourceUrl}')` }}
       >
         <div className="container mx-auto max-w-[1480px]">
           <Image
-            src={data.page.bannerHomesecond.bannersecondbackground?.node?.link || '/default-image.jpg'} // Fallback image
+            src={data.page.bannerHomesecond.bannersecondbackground?.node?.sourceUrl || '/default-image.jpg'} // Fallback image
             layout="fill"
             objectFit="cover"
             className="z-0 opacity-50"
@@ -209,7 +209,7 @@ export default async function Home() {
                   </div>
                   <div className="w-full md:w-8/12 self-end p-4">
                     <Image
-                      src={data.page.bannerHomesecond.secondRightImage?.node?.link}
+                      src={data.page.bannerHomesecond.secondRightImage?.node?.sourceUrl}
                       className="rounded-md"
                       width={350}
                       height={470}
@@ -228,7 +228,7 @@ export default async function Home() {
           <div className=" flex flex-col md:flex-row md:w-full lg:w-6/12 bg-white ">
             <div className="w-6/12 relative bg-no-repeat bg-cover w-auto bg-bottom  md:w-[400px] lg:w-[256px]  md:h-[313px] lg:h-[100%]   border-t border-transparent ">
               <Image
-                src={`${data.page.sectionHomethird.firstcolumnimage?.node?.link}`}
+                src={`${data.page.sectionHomethird.firstcolumnimage?.node?.sourceUrl}`}
                 alt="Background Image"
                 layout="fill" // This will make the image cover the div area
                 objectFit="cover" // Ensure the image is scaled to cover the div
@@ -290,7 +290,7 @@ export default async function Home() {
                   </button>
                 </Link>
                 <Image
-                  src={data.page.sectionHomethird.secondcolumnimage?.node?.link}
+                  src={data.page.sectionHomethird.secondcolumnimage?.node?.sourceUrl}
                   className="object-cover w-[106px] h-[106px]"
                   alt="Image"
                   width={300}
@@ -318,7 +318,7 @@ export default async function Home() {
                   </button>{' '}
                 </Link>
                 <Image
-                  src={data.page.sectionHomethird.thirdcolumnimage?.node?.link}
+                  src={data.page.sectionHomethird.thirdcolumnimage?.node?.sourceUrl}
                   alt=""
                   width={100}
                   height={100}
@@ -344,7 +344,7 @@ export default async function Home() {
               subtitle={data.page.homefourtsection.firstsubtitle1}
               heading={data.page.homefourtsection.firstheading}
               paragraph={data.page.homefourtsection.firstparagraph}
-              image={data.page.homefourtsection.firstimage?.node?.link}
+              image={data.page.homefourtsection.firstimage?.node?.sourceUrl}
             />
           </div>
 
@@ -354,7 +354,7 @@ export default async function Home() {
               subtitle={data.page.homefourtsection.secondsubtitle}
               heading={data.page.homefourtsection.secondheading}
               paragraph={data.page.homefourtsection.secondparagraph}
-              image={data.page.homefourtsection.secondimage?.node?.link}
+              image={data.page.homefourtsection.secondimage?.node?.sourceUrl}
             />
           </div>
 
@@ -364,7 +364,7 @@ export default async function Home() {
               subtitle={data.page.homefourtsection.thirdsubtitle}
               heading={data.page.homefourtsection.thirdheading}
               paragraph={data.page.homefourtsection.thirdparagraph}
-              image={data.page.homefourtsection.thirdimage?.node?.link}
+              image={data.page.homefourtsection.thirdimage?.node?.sourceUrl}
             />
           </div>
         </div>
@@ -377,14 +377,14 @@ export default async function Home() {
           <h5 className="md:text-[45px] text-[26px]  text-[#A1CF5F] md:text-left text-left  pb-[15px] font-bold pt-[20px] md:leading-10 ">{data.page.homefifthsection.mainheadingfifth}</h5>
           <p className="md:text-[45px] md:w-[87%]  text-[22px] md:text-left text-left text-white md:leading-normal font-bold">
           {data.page.homefifthsection.fifthheadingsimple}</p>
-          <Image src={data.page.homefifthsection.authorimage?.node?.link} className="md:h-[150px] mx-unset mt-10 md:mt-0 md:mx-0 h-[83px]" alt="image"  width={800} height={500} />
+          <Image src={data.page.homefifthsection.authorimage?.node?.sourceUrl} className="md:h-[150px] mx-unset mt-10 md:mt-0 md:mx-0 h-[83px]" alt="image"  width={800} height={500} />
           
 
           <h5 className="text-[30px] text-white md:text-left text-left font-bold pb-2 md:pb-5">{data.page.homefifthsection.authortitle}</h5>
           <h5 className="text-[12px] text-white md:text-left text-left font-bold">{data.page.homefifthsection.authordesignation}</h5>
         </div>
         <div className="md:w-8/12   md:py-[30px] relative ">
-        <Image src={data.page.homefifthsection.fifthfirstimage?.node?.link} className="" layout="responsive" width={16} height={9} alt="" />
+        <Image src={data.page.homefifthsection.fifthfirstimage?.node?.sourceUrl} className="" layout="responsive" width={16} height={9} alt="" />
           
 
         <Image
@@ -457,7 +457,7 @@ export default async function Home() {
           </div>
           <div className=" md:w-6/12 lg:w-6/12  relative bg-cover bg-center overflow-hidden">
             <Image
-              src={data.page.homesixthsection.rightimage?.node?.link}
+              src={data.page.homesixthsection.rightimage?.node?.sourceUrl}
               className="absolute object-cover w-full h-full rounded-lg"
               layout="" // This will make the image cover the div area
               // objectFit="cover rounded-lg"

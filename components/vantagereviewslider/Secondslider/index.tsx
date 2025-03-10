@@ -19,7 +19,7 @@ const POSTS_QUERY = gql`
           vintageReviewSliderFirstReviewRow {
             vintageReviewSliderFirstUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             vintageReviewSliderReviewFirstReview
@@ -32,7 +32,7 @@ const POSTS_QUERY = gql`
             vintageReviewSliderReviewSecondReview
             vintageReviewSliderReviewSecondUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             vintageReviewSliderReviewSecondUserName
@@ -117,7 +117,7 @@ const ReviewSecondSlider = () => {
                   <div className="flex mb-4">
                     <div className="mr-4">
                       <Image
-                        src={testimonial.vintageReviewSliderReviewSecondUserImage?.node?.link || 'Untitled'}
+                        src={testimonial.vintageReviewSliderReviewSecondUserImage?.node?.sourceUrl || 'Untitled'}
                         alt={testimonial.vintageReviewSliderReviewSecondUserName}
                         width={50}
                         height={50}

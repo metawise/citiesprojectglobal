@@ -47,7 +47,7 @@ export default async function Book() {
         <div className="w-full md:w-[70%] mx-auto">
           <div className="grid items-end justify-end ">
             <Image
-              src={data.page.donatePageFeilds.donateThirdSectionImage?.node?.link}
+              src={data.page.donatePageFeilds.donateThirdSectionImage?.node?.sourceUrl}
               alt=""
               layout="responsive"
               width={16}
@@ -78,7 +78,7 @@ export default async function Book() {
         <div className="flex p-0 md:p-10">
           <div className="w-2/3">
             <Image
-              src={data.page.donatePageFeilds.donateFourthSection?.node?.link}
+              src={data.page.donatePageFeilds.donateFourthSection?.node?.sourceUrl}
               className="w-[80%]"
               alt=""
               width={740}
@@ -87,7 +87,7 @@ export default async function Book() {
           </div>
           <div className="relative w-1/3">
             <Image
-              src={data.page.donatePageFeilds.donateFourthSectionSecondImage?.node?.link}
+              src={data.page.donatePageFeilds.donateFourthSectionSecondImage?.node?.sourceUrl}
               className="absolute bottom-0 right-0"
               alt=""
               layout="responsive"
@@ -100,7 +100,7 @@ export default async function Book() {
         </div>
         <div className="">
           <Image
-            src={data.page.donatePageFeilds.donateFourthSectionThirdImage?.node?.link}
+            src={data.page.donatePageFeilds.donateFourthSectionThirdImage?.node?.sourceUrl}
             className="w-[15%] mx-auto"
             alt=""
             width={740}

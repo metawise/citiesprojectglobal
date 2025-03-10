@@ -21,7 +21,7 @@ const POSTS_QUERY = gql`
             shortCoursesSixthSectionReviewSecondReview
             shortCoursesSixthSectionReviewSecondUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             shortCoursesSixthSectionReviewSecondUserStatus
@@ -104,7 +104,7 @@ const ReviewSecondSlider = () => {
                   <div className="flex mb-4">
                     <div className="mr-4">
                       <Image
-                        src={testimonial.shortCoursesSixthSectionReviewSecondUserImage?.node?.link || 'Untitled'}
+                        src={testimonial.shortCoursesSixthSectionReviewSecondUserImage?.node?.sourceUrl || 'Untitled'}
                         alt={testimonial.shortCourseSixthSectionReviewSecondUserName}
                         width={50}
                         height={50}

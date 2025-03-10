@@ -19,7 +19,7 @@ const POSTS_QUERY = gql`
           vintageReviewSliderFirstReviewRow {
             vintageReviewSliderFirstUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             vintageReviewSliderReviewFirstReview
@@ -32,7 +32,7 @@ const POSTS_QUERY = gql`
             vintageReviewSliderReviewSecondReview
             vintageReviewSliderReviewSecondUserImage {
               node {
-                link
+                sourceUrl
               }
             }
             vintageReviewSliderReviewSecondUserName
@@ -51,7 +51,7 @@ interface vintageReviewSliderFirstReviewRow {
     __typename: string
     node?: {
       __typename: string
-      link: string
+      sourceUrl: string
     }
   }
   vintageReviewSliderReviewFirstUserName: string
@@ -125,7 +125,7 @@ const ReviewFirstSlider = () => {
                   <div className="flex mb-4">
                     <div className="mr-4">
                       <Image
-                        src={testimonial.vintageReviewSliderFirstUserImage?.node?.link || 'Untitled'}
+                        src={testimonial.vintageReviewSliderFirstUserImage?.node?.sourceUrl || 'Untitled'}
                         alt={testimonial.vintageReviewSliderReviewFirstUserName}
                         width={50}
                         height={50}

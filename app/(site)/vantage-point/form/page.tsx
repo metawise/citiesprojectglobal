@@ -27,43 +27,43 @@ const POSTS_QUERY = gql`
         vantageFormSecondSectionSecondColumnPrice
         vantageFormFirstSectionRightImage {
           node {
-            link
+            sourceUrl
           }
         }
         vantageFormSecondSectionFirstColumnImage {
           node {
-            link
+            sourceUrl
           }
         }
         vantageFormSecondSectionThirdColumnImage {
           node {
-            link
+            sourceUrl
           }
         }
         vantageFormThirdSection {
           vantageFormThirdSectionImage1 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage2 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage3 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage4 {
             node {
-              link
+              sourceUrl
             }
           }
           vantageFormThirdSectionImage5 {
             node {
-              link
+              sourceUrl
             }
           }
         }
@@ -87,7 +87,7 @@ const Form = async () => {
           <Image
             width={200}
             height={200}
-            src={data.page.vantageForm.vantageFormFirstSectionRightImage?.node?.link}
+            src={data.page.vantageForm.vantageFormFirstSectionRightImage?.node?.sourceUrl}
             alt="Vantage Logo"
           />
         </div>
@@ -97,7 +97,7 @@ const Form = async () => {
           <Image
             width={2000}
             height={2000}
-            src={data.page.vantageForm.vantageFormSecondSectionFirstColumnImage?.node?.link}
+            src={data.page.vantageForm.vantageFormSecondSectionFirstColumnImage?.node?.sourceUrl}
             className="object-cover object-right xl:h-[363px]  md:h-[263px]"
             alt="Vantage Image 1"
           />
@@ -123,7 +123,7 @@ const Form = async () => {
           <Image
             width={2000}
             height={2000}
-            src={data.page.vantageForm.vantageFormSecondSectionThirdColumnImage?.node?.link}
+            src={data.page.vantageForm.vantageFormSecondSectionThirdColumnImage?.node?.sourceUrl}
             className="object-cover object-center xl:h-[363px] md:h-[263px]"
             alt="Vantage Image 2"
           />
@@ -139,7 +139,7 @@ const Form = async () => {
               height={700}
               alt=""
               className=""
-              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage1?.node?.link}
+              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage1?.node?.sourceUrl}
             />
           </div>
           <div className=" ">
@@ -148,7 +148,7 @@ const Form = async () => {
               height={700}
               alt=""
               className=""
-              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage2?.node?.link}
+              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage2?.node?.sourceUrl}
             />
           </div>
           <div className=" ">
@@ -157,7 +157,7 @@ const Form = async () => {
               height={700}
               alt=""
               className=""
-              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage3?.node?.link}
+              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage3?.node?.sourceUrl}
             />
           </div>
           <div className="] ">
@@ -166,7 +166,7 @@ const Form = async () => {
               height={700}
               alt=""
               className=""
-              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage4?.node?.link}
+              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage4?.node?.sourceUrl}
             />
           </div>
           <div className="  ">
@@ -175,7 +175,7 @@ const Form = async () => {
               height={700}
               alt=""
               className=""
-              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage5?.node?.link}
+              src={data.page.vantageForm.vantageFormThirdSection.vantageFormThirdSectionImage5?.node?.sourceUrl}
             />
           </div>
         </div>

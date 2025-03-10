@@ -36,12 +36,12 @@ const SwiperSection = ({ data }: { data: any }) => {
                 <div className="flex">
                   <div
                     className="w-1/3  relative  bg-cover bg-center"
-                    // style={{ backgroundImage: `url('${post.featuredImage?.node?.link}')` }}>
+                    // style={{ backgroundImage: `url('${post.featuredImage?.node?.sourceUrl}')` }}>
                   >
                     {/* <Image src=
                       alt={post.title} width={1000} height={1000} /> */}
                     <Image
-                      src={post.featuredImage?.node?.link || '/No_Image.jpg'} // Fallback image
+                      src={post.featuredImage?.node?.sourceUrl || '/No_Image.jpg'} // Fallback image
                       layout="fill"
                       objectFit="cover"
                       alt={post.title || 'Default title'} // Provide a fallback title

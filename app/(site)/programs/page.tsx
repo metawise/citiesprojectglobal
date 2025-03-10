@@ -27,7 +27,7 @@ export default async function Programs() {
         <Image
           width={1500}
           height={1000}
-          src={data.page.programpagefeild.secondSectionImage.node.link}
+          src={data.page.programpagefeild.secondSectionImage.node.sourceUrl}
           className="mx-auto p-2 md:p-0 aspect-video object-cover max-h-[600px] rounded-md"
           alt=""
         />
@@ -95,7 +95,7 @@ export default async function Programs() {
                       <Image
                         width={1400}
                         height={1000}
-                        src={dataposts.columnimages_program?.node?.link}
+                        src={dataposts.columnimages_program?.node?.sourceUrl}
                         className="mx-auto"
                         alt=""
                       />
