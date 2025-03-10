@@ -51,7 +51,7 @@ interface vintageReviewSliderSecondReviewRow {
     __typename: string
     node?: {
       __typename: string
-      link: string
+      sourceUrl: string
     }
   }
   vintageReviewSliderReviewSecondUserStatus: string
