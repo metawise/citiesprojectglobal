@@ -14,13 +14,14 @@ import MainComponent from '@/components/LightboxPdf'
 import { VANTAGEPOINT_QUERY } from '@/queries/queries'
 import Head from '../head'
 import { fetchData } from '@/lib/fetchData'
-
+ 
 export const revalidate = 60 // revalidate at most every 5 minutes
 
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 const page = async () => {
   const data = await fetchData(VANTAGEPOINT_QUERY)
+  console
   const vantage = data.page.vintagePageFeild
   return (
     <div className="container mx-auto">
