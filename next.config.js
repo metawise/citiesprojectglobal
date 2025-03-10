@@ -9,7 +9,7 @@ const nextConfig = {
         hostname: 'backend.citiesprojectglobal.com',
       },
     ],
-  }, 
+  },  
   env: {
     NEXT_STRIPE_PUBLISH_KEY: process.env.NEXT_STRIPE_PUBLISH_KEY,
     NEXT_BACKEND_STRIPE_URL: process.env.NEXT_BACKEND_STRIPE_URL,
