@@ -7,7 +7,8 @@ import { useEffect, useState } from 'react'
 import ThemeToggler from './ThemeToggler'
 import menuData from './menuData'
 import Script from "next/script";
-
+ import GoogleTranslateFix  from '@/lib/custom'
+ 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false)
   const [dropdownToggler, setDropdownToggler] = useState(false)
@@ -78,20 +79,7 @@ const Header = () => {
 
       setLastScrollTop(st <= 0 ? 0 : st) // To handle negative scrolling (e.g., mobile)
     }
-    document.addEventListener("DOMContentLoaded", function () {
-      let selectBox = document.querySelector("select.goog-te-combo");
-      
-      if (selectBox) {
-        selectBox.querySelectorAll("option").forEach(option => {
-          const allowedValues = ["en", "fr", "es", "ru", "ar", "pt-PT"];
-          if (!allowedValues.includes(option.value)) {
-            option.style.display = "none";
-          } else {
-            option.style.display = "block"; // Ensure visible options are displayed
-          }
-        });
-      }
-    });
+    
     // Adding scroll event listener
     window.addEventListener('scroll', handleScroll)
 
@@ -281,7 +269,7 @@ const Header = () => {
         <Script
      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></Script>
-
+  <GoogleTranslateFix />
     {/* Google Translate CSS */}
     <link
      rel="stylesheet"
