@@ -236,7 +236,7 @@ export default async function Home() {
               />
             </div>
             <div className="md:w-6/12 md:pl-[30px] py-4 gap-0  text-left md:text-left px-4 md:px-6">
-              <h1 className="text-[32px]  text-black leading-none mt-3 ">
+              <h1 className="text-[32px] max-[1024px]:text-[28px]  text-black leading-none mt-3 ">
                 {data.page.sectionHomethird.firstcolumnheading}
               </h1>
               <h5 className="text-[16px] text-black font-bold mt-2">{data.page.sectionHomethird.subtitletextfirst}</h5>
@@ -269,7 +269,7 @@ export default async function Home() {
 
           <div className="md:w-full lg:w-6/12 flex flex-col md:flex-row ">
             <div className="md:w-6/12  md:text-left text-left py-4 px-7 bg-[#224334]">
-              <h3 className="text-[32px] text-white  leading-none mt-3">
+              <h3 className="text-[32px] text-white max-[1024px]:text-[28px] leading-none mt-3">
                 {data.page.sectionHomethird.secondcolumnheading}
               </h3>
               <h5 className="text-[16px] text-white font-bold  mt-2">
@@ -299,7 +299,7 @@ export default async function Home() {
               </div>
             </div>
             <div className="md:w-6/12 py-4 px-7  md:text-left  bg-[#a1cf5f]">
-              <h3 className="text-[32px] text-black   leading-none mt-3">
+              <h3 className="text-[32px] text-black max-[1024px]:text-[28px]  leading-none mt-3">
                 {data.page.sectionHomethird.thirdcolumnheading}
               </h3>
               <h5 className="text-[16px] text-black font-bold  mt-2">{data.page.sectionHomethird.subtitletextthird}</h5>

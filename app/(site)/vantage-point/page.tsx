@@ -14,14 +14,16 @@ import MainComponent from '@/components/LightboxPdf'
 import { VANTAGEPOINT_QUERY } from '@/queries/queries'
 import Head from '../head'
 import { fetchData } from '@/lib/fetchData'
-
+ 
 export const revalidate = 60 // revalidate at most every 5 minutes
-
+    
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 const page = async () => {
-  const data = await fetchData(VANTAGEPOINT_QUERY)
-  const vantage = data.page.vintagePageFeild
+  const data = await fetchData(VANTAGEPOINT_QUERY);
+ 
+  const vantage = data.page.vintagePageFeild 
+    console.log(vantage);
   return (
     <div className="container mx-auto">
       <Head data={data} />
@@ -425,7 +427,7 @@ const page = async () => {
                   />
                 </div>
                 <div className=" md:w-2/3 w-full rounded ">
-                  <div className="bg-[#D8FFA1] flex p-6  h-auto md:w-[70%] w-full gap-[29px] flex h-auto">
+                  <div className="bg-[#D8FFA1] flex  max-[1028px]:grid  p-6  h-auto md:w-[70%] w-full gap-[29px] flex h-auto">
                     <h2 className=" w-4/12 text-[40px] leading-[50px] w-[80%] font-bold text-[#000000]">
                       {vantage.vintageNinthSection.vintageNinthSectionRightSectionRowSecondHeading}
                     </h2>
