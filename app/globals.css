@@ -347,6 +347,7 @@ select.goog-te-combo option[value='ar'],
 select.goog-te-combo option[value='pt-PT'] {
   display: block;
   font-size: 16px;
+  
 }
 select.goog-te-combo option {
   display: none;
@@ -356,6 +357,7 @@ select.goog-te-combo {
   font-family: 'Inter', 'Inter Fallback' !important;
   border: 3px solid #a1cf5f;
   border-radius: 5px;
+  margin-top:5px;
 }
 div#\:0\.targetLanguage {
   visibility: visible;
