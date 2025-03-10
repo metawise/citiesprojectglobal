@@ -42,7 +42,7 @@ interface ShortCoursesThirdSectionCard {
     __typename: string
     node?: {
       __typename: string
-      link: string
+      sourceUrl: string
     }
   }
   shortCoursesThirdSectionMainSecondRowCardPrice: string
