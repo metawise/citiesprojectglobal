@@ -38,7 +38,7 @@ interface ShortCoursesSixthSectionReview {
     __typename: string
     node?: {
       __typename: string
-      link: string
+      sourceUrl: string
     }
   }
   shortCoursesSixthSectionReviewFirstUserName: string

@@ -39,7 +39,7 @@ interface ShortCoursesSixthSectionSecondReview {
     __typename: string
     node?: {
       __typename: string
-      link: string
+      sourceUrl: string
     }
   }
   shortCoursesSixthSectionReviewSecondUserStatus: string
