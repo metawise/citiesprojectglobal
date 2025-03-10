@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ARTICLES_QUERY, ARTICLES_PAGE_QUERY } from '@/queries/queries'
 import Head from '../head'
-import { getSlugsFromUrl } from '@/lib/tools'
+// import { getSlugsFromUrl } from '@/lib/tools'
 import { fetchData } from '@/lib/fetchData'
 
 const BlogPage = async () => {
@@ -29,7 +29,7 @@ const BlogPage = async () => {
               <div className="flex flex-col lg:flex-row overflow-hidden">
                 <div>
                   <Image
-                    src={uniquePosts[0]?.featuredImage?.node?.link || '/No_Image.jpg'}
+                    src={uniquePosts[0]?.featuredImage?.node?.sourceUrl || '/No_Image.jpg'}
                     alt="Group of people"
                     className="w-full object-cover"
                     // layout="responsive"
@@ -117,7 +117,7 @@ const BlogPage = async () => {
                     <BlogCard
                       key={post.id}
                       index={index}
-                      image={post.featuredImage?.node?.link}
+                      image={post.featuredImage?.node?.sourceUrl}
                       date={formatDate}
                       title={post.title}
                       linkText="Read More"
