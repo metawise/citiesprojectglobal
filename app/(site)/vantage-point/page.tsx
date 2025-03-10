@@ -198,7 +198,7 @@ const page = async () => {
               <p className="max-w-[515px] text-[16px] text-black">
                 {vantage.vintageFifthSection.vintageFifthSectionMainDescription}
               </p>
-            </div> 
+            </div>
             <Image
               src={vantage.vintageFifthSection.vintageFifthSectionLeftImage?.node?.link}
               alt=""
