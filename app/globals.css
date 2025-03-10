@@ -353,12 +353,18 @@ select.goog-te-combo option {
   display: none;
 }
 select.goog-te-combo {
-  padding: 9px;
+  padding: 2px;
   font-family: 'Inter', 'Inter Fallback' !important;
   border: 3px solid #a1cf5f;
   border-radius: 5px;
-  margin-top:5px;
+  margin-top: 5px;
+  text-align: center;;
+  /* Fix for iPhone */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
 div#\:0\.targetLanguage {
   visibility: visible;
   margin-bottom: -31px;
