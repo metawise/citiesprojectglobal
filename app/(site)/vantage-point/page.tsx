@@ -16,7 +16,7 @@ import Head from '../head'
 import { fetchData } from '@/lib/fetchData'
  
 export const revalidate = 60 // revalidate at most every 5 minutes
-
+    
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 const page = async () => {
