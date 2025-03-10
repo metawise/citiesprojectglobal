@@ -20,9 +20,10 @@ export const revalidate = 60 // revalidate at most every 5 minutes
 const anton = Anton({ weight: '400', subsets: ['latin'] })
 
 const page = async () => {
-  const data = await fetchData(VANTAGEPOINT_QUERY)
-  console.log(data);
-  const vantage = data.page.vintagePageFeild
+  const data = await fetchData(VANTAGEPOINT_QUERY);
+ 
+  const vantage = data.page.vintagePageFeild 
+    console.log(vantage);
   return (
     <div className="container mx-auto">
       <Head data={data} />
@@ -197,7 +198,7 @@ const page = async () => {
               <p className="max-w-[515px] text-[16px] text-black">
                 {vantage.vintageFifthSection.vintageFifthSectionMainDescription}
               </p>
-            </div>
+            </div> 
             <Image
               src={vantage.vintageFifthSection.vintageFifthSectionLeftImage?.node?.link}
               alt=""
